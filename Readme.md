@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Elizabeth Anatskaya](https://up.htmlacademy.ru/adaptive/10/user/122950).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Походня](https://htmlacademy.ru/profile/id166319).
 
 ---
 
