@@ -1,0 +1,44 @@
+.pagination__item {
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  font-family: $base-font-bold;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--toys {
+    &::after {
+      content: '';
+      min-width: 60px;
+      height: 60px;
+      background-image: url('../img/icon-toy.svg');
+      background-repeat: no-repeat;
+      display: block;
+      background-position: center;
+    }
+  }
+
+  &--interior {
+    &::after {
+      content: '';
+      min-width: 60px;
+      height: 60px;
+      background-image: url('../img/icon-interior.svg');
+      background-repeat: no-repeat;
+      display: block;
+      background-position: center;
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: #63d1bb;
+  }
+  &:nth-child(odd) {
+    background-color: #56c3b2;
+  }
+
+}
+

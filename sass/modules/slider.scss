@@ -1,0 +1,20 @@
+.slider {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.slider__controls {
+  padding: 40px 0 35px;
+  display: flex;
+}
+
+.slider__control {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #ececec;
+  padding: 12px 37px;
+  cursor: pointer;
+  font-size: 0;
+  width: 50%;
+  border-collapse: collapse;
+}

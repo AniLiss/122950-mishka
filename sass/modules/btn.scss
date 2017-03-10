@@ -1,0 +1,16 @@
+.btn {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $dark-grey-color;
+  text-align: center;
+  padding: 15px 25px;
+  font-family: $base-font-bold;
+  background-color: transparent;
+  border: 2px solid $dark-grey-color;
+  cursor: pointer;
+  width: 100%;
+
+  a {
+    color: $dark-grey-color;
+  }
+}

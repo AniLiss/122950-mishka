@@ -3,46 +3,52 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="layout">
 <header class="page-header">
-  <a class="logo" href="#">Мишка</a>
+  <div class="page-header__title">
+    <a class="logo" href="#">
+      <img src="img/logo-mobile.svg" alt="logo">
+    </a>
+
+    <button class="page-menu-toggle page-menu-toggle--active"></button>
+  </div>
 
   <nav class="page-menu">
-    <div class="page-menu__toggle">
-      <img src="http://placehold.it/20x15" alt="toggle">
-    </div>
     <ul class="page-menu__list invisible">
-      <li class="page-menu__item">Каталог товаров</li>
-      <li class="page-menu__item">Вязание на заказ</li>
-      <li class="page-menu__item">Поиск по сайту</li>
-      <li class="page-menu__item">Корзина: пока пуста</li>
+      <li class="page-menu__item">
+        <a href="#">Каталог товаров</a>
+      </li>
+      <li class="page-menu__item">
+        <a href="#">Вязание на заказ</a>
+      </li>
+      <li class="page-menu__item page-menu__item--decorated page-menu__item--search">
+        <a href="#">Поиск по сайту</a>
+      </li>
+      <li class="page-menu__item page-menu__item--decorated page-menu__item--basket">
+        <a href="#">Корзина: пока пустa</a>
+      </li>
     </ul>
   </nav>
 </header>
 
 <main class="page-content">
-  <div class="page-content__title">
-    <h1>Милые штуки ручной работы для дома</h1>
+  <h1 class="page-content__title page-content__title--index">Милые штуки ручной работы для дома</h1>
+
+  <div class="pagination">
+    <a class="pagination__item pagination__item--interior container" href="#">
+      <p>Предметы интерьера</p>
+    </a>
+
+    <a class="pagination__item pagination__item--toys container" href="#">
+      <p>Детские игрушки</p>
+    </a>
   </div>
-
-  <ul class="pagination">
-    <li class="pagination__item">
-      <a href="#">
-        <span>Предметы интерьера</span>
-      </a>
-    </li>
-
-    <li class="pagination__item">
-      <a href="#">
-        <span>Детские игрушки</span>
-      </a>
-    </li>
-  </ul>
 
   <div class="container">
     <article class="catalog-item catalog-item--popular">
-      <h2 class="catalog-item__title">Вязаные корзинки</h2>
+      <h2 class="section-title">Вязаные корзинки</h2>
       <h3 class="catalog-item__subtitle">Товар недели</h3>
       <p class="catalog-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.</p>
@@ -57,15 +63,15 @@
           <td>25 см</td>
         </tr>
         <tr>
-          <td>Высота</td>
+          <td>Высота:</td>
           <td>15 см</td>
         </tr>
       </table>
 
-      <img class="catalog-item__preview" src="http://placehold.it/265x195" alt="basket">
+      <img class="catalog-item__preview" src="img/triple-set-mobile@1x.jpg" alt="basket">
 
       <div class="catalog-item__price">
-        <span>990 руб.</span>
+        <span>Цена: 990 руб.</span>
       </div>
 
       <button type="button" class="btn">Заказать</button>
@@ -76,27 +82,21 @@
 
       <ul class="about__list">
         <li class="about__item">
-          <img src="http://placehold.it/55x40" alt="flower">
           Экологически чистые материалы
         </li>
         <li class="about__item">
-          <img src="http://placehold.it/55x40" alt="banknote">
           Скандинавский стиль по российской цене
         </li>
         <li class="about__item">
-          <img src="http://placehold.it/55x40" alt="heart">
           Увеличивает лайки на фотографиях
         </li>
         <li class="about__item">
-          <img src="http://placehold.it/55x40" alt="clew">
           Связано вручную с любовью и умилением
         </li>
         <li class="about__item">
-          <img src="http://placehold.it/55x40" alt="rocket">
           Поддержка отечественного производителя
         </li>
         <li class="about__item">
-          <img src="http://placehold.it/55x40" alt="gift">
           Поставляется в подарочной упаковке
         </li>
       </ul>
@@ -110,44 +110,74 @@
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
           стильными, а также набирают больше лайков!
         </p>
-        <p class="feedback__author">Анастасия Красильникова</p>
-        <p class="feedback__nickname">@misssssiskras</p>
+        <div class="feedback__author">
+          <p class="feedback__name">Анастасия Красильникова</p>
+          <p class="feedback__nickname">@misssssiskras</p>
+        </div>
       </section>
-    </div>
 
-    <div class="slider__controls">
-      <button type="button" class="slider__control slider__control--left"></button>
-      <button type="button" class="slider__control slider__control--right"></button>
-    </div>
 
-    <button type="button" class="btn">Написать</button>
+      <div class="slider__controls">
+        <button type="button" class="slider__control slider__control--left">
+          <img src="img/icon-left-arrow.svg" alt="left-arrow">
+        </button>
+        <button type="button" class="slider__control slider__control--right">
+          <img src="img/icon-right-arrow.svg" alt="right-arrow">
+        </button>
+      </div>
+
+      <button type="button" class="btn">Написать</button>
+    </div>
   </div>
 
   <div class="contacts">
-    <div class="vcard">
+    <div class="vcard container">
       <h3 class="vcard__title">Контакты</h3>
-      <p class="vcard__email">e-mail: <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-      <p class="vcard__address">адрес: <span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span></p>
+      <!--<p class="vcard__email">e-mail: <a class="vcard__definition" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>-->
+      <!--<p class="vcard__address">адрес: <span class="vcard__definition">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span></p>-->
+
+      <table class="catalog-item__details">
+        <tr>
+          <td class="vcard__term vcard__term--email">e-mail:</td>
+          <td class="vcard__definition"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+        </tr>
+        <tr>
+          <td class="vcard__term vcard__term__address">адрес:</td>
+          <td class="vcard__definition">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+        </tr>
+      </table>
     </div>
 
-    <div class="map">
-      <img src="http://placehold.it/55x40" alt="map">
+    <div class="map"></div>
+
+    <div class="container contacts__button">
+      <div class="btn">
+        <a href="#">Напишите нам</a>
+      </div>
     </div>
   </div>
-
-  <a href="#" class="btn">Напишите нам</a>
 </main>
 
 <footer class="page-footer">
-  <div class="social-links">
-    <a class="social-links__item social-links__item--inst" href="#"></a>
-    <a class="social-links__item social-links__item--fb" href="#"></a>
-    <a class="social-links__item social-links__item--tw" href="#"></a>
-  </div>
+  <div class="container">
+    <div class="social-links">
+      <a class="social-links__item social-links__item--inst" href="#">
+        <img src="img/icon-insta.svg" alt="">
+      </a>
+      <a class="social-links__item social-links__item--fb" href="#">
+        <img src="img/icon-fb.svg" alt="">
+      </a>
+      <a class="social-links__item social-links__item--tw" href="#">
+        <img src="img/icon-twitter.svg" alt="">
+      </a>
+    </div>
 
-  <div class="copyright">
-    <span>Разработано</span>
-    <img class="html-academy-logo" src="http://placehold.it/30x35" alt="html-academy">
+    <div class="copyright">
+      <span>Разработано</span>
+      <a class="html-academy-logo" href="#">
+        <img src="img/logo-htmlacademy.svg" alt="html-academy">
+      </a>
+    </div>
   </div>
 </footer>
 </body>
