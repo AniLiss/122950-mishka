@@ -1,0 +1,61 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.about__item {
+  font-size: 17px;
+  color: $dark-grey-color;
+  padding-top: 35px;
+
+  &:first-of-type {
+    padding: 0;
+  }
+
+  &::before {
+    content: '';
+    width: 55px;
+    height: 40px;
+    display: block;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+
+  }
+
+  &:first-of-type {
+    &::before {
+      background-image: url('../img/icon-feature-1.svg');
+
+    }
+  }
+
+  &:nth-of-type(2) {
+    &::before {
+      background-image: url('../img/icon-feature-2.svg');
+    }
+  }
+
+  &:nth-of-type(3) {
+    &::before {
+      background-image: url('../img/icon-feature-3.svg');
+    }
+  }
+
+  &:nth-of-type(4) {
+    &::before {
+      background-image: url('../img/icon-feature-4.svg');
+    }
+  }
+
+  &:nth-of-type(5) {
+    &::before {
+      background-image: url('../img/icon-feature-5.svg');
+    }
+  }
+
+  &:nth-of-type(6) {
+    &::before {
+      background-image: url('../img/icon-feature-6.svg');
+    }
+  }
+}

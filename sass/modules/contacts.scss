@@ -1,0 +1,39 @@
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.vcard {
+  color: $dark-grey-color;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+
+.vcard__title {
+  font-size: 18px;
+  padding-bottom: 44px;
+}
+
+.vcard__term {
+  min-width: 65px;
+  vertical-align: text-top;
+}
+
+.vcard__definition {
+  margin-left: 35px;
+  padding-top: 40px;
+  vertical-align: text-top;
+
+  &:first-of-type {
+    padding: 0;
+  }
+
+  a {
+    color: $dark-grey-color;
+    border-bottom: 1px solid $accent-font-color;
+  }
+}
+
+.contacts__button {
+  padding-top: 40px;
+}

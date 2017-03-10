@@ -1,0 +1,13 @@
+.page-menu-toggle {
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  background-image: url('../img/icon-menu-open.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  right: 21px;
+  transform: translateY(-50%);
+  top: 50%;
+}
