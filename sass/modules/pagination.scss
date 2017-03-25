@@ -39,6 +39,25 @@
   &:nth-child(odd) {
     background-color: #56c3b2;
   }
+}
 
+@media ($tablet-width) {
+  .pagination {
+    min-width: 768px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination__item {
+    min-width: 50%;
+  }
+}
+
+@media ($desktop-width) {
+  .pagination {
+    min-width: 768px;
+    padding: 0 50px;
+  }
 }
 

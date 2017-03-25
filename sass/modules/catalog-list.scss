@@ -1,0 +1,13 @@
+@media ($desktop-width) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+//.catalog-list {
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: space-between;
+//}

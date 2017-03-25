@@ -1,5 +1,6 @@
 @import 'helpers/font.scss';
 @import 'helpers/variables';
+@import 'helpers/mixins';
 @import 'base/base.scss';
 @import 'modules/container';
 @import 'modules/about';
@@ -19,3 +20,4 @@
 @import 'modules/basket-btn';
 @import 'modules/catalog-form-section';
 @import 'modules/catalog-form';
+@import 'modules/catalog-list';

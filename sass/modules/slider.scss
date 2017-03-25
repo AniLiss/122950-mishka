@@ -18,3 +18,34 @@
   width: 50%;
   border-collapse: collapse;
 }
+
+@media ($tablet-width) {
+  .slider {
+    position: relative;
+
+    .btn {
+      max-width: 176px;
+      position: absolute;
+      top: 0;
+      transform: translateY(80%);
+      right: 0;
+    }
+  }
+
+  .slider__control {
+    max-width: 140px;
+    padding: 12px 15px;
+    border: none;
+  }
+  .slider__controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media ($desktop-width) {
+  .slider {
+    padding-left: 175px;
+  }
+}

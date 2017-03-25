@@ -42,3 +42,13 @@
     display: block;
   }
 }
+
+@media ($desktop-width) {
+  .page-menu__item {
+    &--search {
+      span {
+        display: none;
+      }
+    }
+  }
+}

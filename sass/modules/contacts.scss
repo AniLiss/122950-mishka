@@ -12,6 +12,8 @@
 .vcard__title {
   font-size: 18px;
   padding-bottom: 44px;
+  position: relative;
+  color: $base-font-color;
 }
 
 .vcard__term {
@@ -36,4 +38,91 @@
 
 .contacts__button {
   padding-top: 40px;
+
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+@media ($tablet-width) {
+  .vcard__title {
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      background-image: url('../img/icon-flag.svg');
+      display: block;
+      width: 50px;
+      height: 80px;
+      content: '';
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-80%);
+      right: 0;
+    }
+  }
+
+  .vcard__table {
+    tbody {
+      display: flex;
+    }
+
+    tr {
+      flex-basis: 300px;
+    }
+  }
+
+  .contacts__button {
+    .btn {
+      width: 230px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .vcard__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      left: -135px;
+    }
+  }
+
+  .vcard__table {
+    tbody {
+      display: block;
+    }
+  }
+
+  .vcard {
+    padding: 40px 0 0 225px;
+    margin: 0;
+    flex-basis: 50%;
+    min-width: 50%;
+  }
+
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    //padding: 0 50px 0 175px;
+  }
+
+  .contacts__button {
+    //min-width: 0;
+    //padding-left: 0;
+    //padding-top: 75px;
+    min-width: 0;
+    padding-left: 225px;
+    padding-top: 75px;
+    position: absolute;
+    bottom: 40px;
+
+    .btn {
+      margin: 0;
+    }
+  }
 }
