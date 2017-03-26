@@ -1,0 +1,19 @@
+.page-submenu {
+  position: absolute;
+  display: none;
+}
+
+.page-submenu__list {
+  display: flex;
+}
+
+.page-submenu__item {
+  padding-right: 50px;
+}
+
+@media ($desktop-width) {
+  .page-submenu {
+    display: block;
+    bottom: -30px;
+  }
+}

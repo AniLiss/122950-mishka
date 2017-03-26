@@ -1,0 +1,12 @@
+.free-delivery {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .free-delivery {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: -30px;
+  }
+}

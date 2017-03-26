@@ -118,6 +118,7 @@
 @media ($tablet-width) {
   .catalog-item {
     position: relative;
+    display: flex;
 
     &--popular {
       display: flex;
@@ -143,10 +144,6 @@
 
       .catalog-item__subtitle {
         width: 70px;
-      }
-
-      .catalog-item__preview {
-        flex-basis: 50%;
       }
 
       .catalog-item__order {
@@ -191,6 +188,9 @@
     }
   }
 
+  .catalog-item__preview {
+    flex-basis: 50%;
+  }
   .catalog-item__info {
     flex-basis: 50%;
     display: flex;
@@ -249,6 +249,22 @@
 
     &--creation {
       flex-basis: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .catalog-item__title {
+        position: absolute;
+        right: 60px;
+
+        &::before {
+          display: block;
+          padding-bottom: 30px;
+        }
+      }
+
+      .catalog-item__info {
+        padding-top: 150px;
+      }
     }
   }
 }

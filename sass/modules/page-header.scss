@@ -4,4 +4,18 @@
   padding-bottom: 21px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
+
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+@media ($tablet-width) {
+  .page-header {
+    position: relative;
+  }
+
+  .page-header__title {
+    display: none;
+  }
 }
