@@ -1,3 +1,7 @@
+//.page-menu {
+//  border-bottom: 1px solid #f1f1f1;
+//}
+
 .page-menu__item {
   position: relative;
   font-size: 17px;
@@ -49,13 +53,24 @@
   }
 }
 
+.page-menu__list.container {
+  padding: 0 0;
+}
+
 @media ($tablet-width) {
+  .page-menu {
+    border-bottom: 1px solid #f1f1f1;
+  }
   .page-menu__list {
     display: flex;
     align-items: center;
     padding: 0 15px;
     justify-content: space-between;
-    border-bottom: 1px solid #f1f1f1;
+    //border-bottom: 1px solid #f1f1f1;
+  }
+
+  .page-menu__list.container {
+    padding: 0 15px;
   }
 
   .page-menu__item {

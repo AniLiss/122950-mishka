@@ -41,12 +41,20 @@
   }
 }
 
+.pagination.container {
+  padding: 0;
+}
+
 @media ($tablet-width) {
   .pagination {
     min-width: 768px;
     padding: 0 50px;
     display: flex;
     justify-content: center;
+  }
+
+  .pagination.container {
+    padding: 0 50px;
   }
 
   .pagination__item {
