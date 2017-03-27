@@ -8,8 +8,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 120px;
+
+  &:active {
+    p {
+      opacity: 0.3;
+    }
+  }
 
   &--toys {
+    &:hover {
+      height: 125px;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
     &::after {
       content: '';
       min-width: 60px;
@@ -22,6 +37,14 @@
   }
 
   &--interior {
+    &:hover {
+      height: 125px;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
     &::after {
       content: '';
       min-width: 60px;
@@ -35,9 +58,22 @@
 
   &:nth-child(even) {
     background-color: #63d1bb;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
+
   &:nth-child(odd) {
     background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+
+    &:active {
+      background-color: #46c1ae;
+    }
   }
 }
 
@@ -55,6 +91,7 @@
 
   .pagination.container {
     padding: 0 50px;
+    height: 125px;
   }
 
   .pagination__item {
