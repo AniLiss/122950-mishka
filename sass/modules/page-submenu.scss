@@ -1,5 +1,5 @@
 .page-submenu {
-  position: absolute;
+  //position: absolute;
   display: none;
 }
 
@@ -13,7 +13,9 @@
 
 @media ($desktop-width) {
   .page-submenu {
-    display: block;
-    bottom: -30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -40px;
+    padding-top: 18px;
   }
 }
