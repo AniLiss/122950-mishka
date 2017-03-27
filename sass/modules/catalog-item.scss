@@ -210,7 +210,9 @@
 
 @media ($desktop-width) {
   .catalog-item {
-    flex-basis: 30%;
+    //flex-basis: 30%;
+    flex-basis: auto;
+    width: 30%;
     flex-direction: column;
 
     &--popular {
@@ -240,7 +242,7 @@
         left: -130px;
       }
       .catalog-item__info {
-        padding: 125px 60px 0 175px ;
+        padding: 125px 60px 0 175px;
       }
 
       .catalog-item__order {
@@ -256,7 +258,7 @@
 
       .catalog-item__title {
         position: absolute;
-        right: 60px;
+        right: 185px;
 
         &::before {
           display: block;
@@ -268,5 +270,13 @@
         padding-top: 150px;
       }
     }
+  }
+  .catalog-item__info {
+    //flex: 1 0;
+    flex-basis: auto;
+    height: 100%;
+  }
+  .catalog-item__preview {
+    flex-basis: auto;
   }
 }
