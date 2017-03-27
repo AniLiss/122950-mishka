@@ -97,17 +97,19 @@
   }
 
   .vcard {
-    padding: 40px 0 0 225px;
+    padding: 70px 0 0 225px;
     margin: 0;
     flex-basis: 50%;
-    min-width: 50%;
+    min-width: 45%;
   }
 
   .contacts {
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     position: relative;
     justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .contacts__button {
