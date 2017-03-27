@@ -218,6 +218,8 @@
     &--popular {
       flex-direction: row;
       position: relative;
+      flex-basis: auto;
+      width: auto;
 
       img {
         height: 635px;
