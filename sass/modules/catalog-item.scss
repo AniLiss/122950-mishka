@@ -139,6 +139,7 @@
 
       .catalog-item__info {
         flex-basis: 50%;
+        max-width: 50%;
         padding-right: 44px;
       }
 
@@ -149,7 +150,7 @@
       .catalog-item__order {
         position: absolute;
         bottom: 70px;
-        //left: 0;
+        left: 0;
 
         .btn {
           width: 260px;
@@ -236,7 +237,7 @@
       .catalog-item__title {
         position: absolute;
         flex-basis: 50%;
-        left: 220px;
+        left: 175px;
         margin-top: 70px;
       }
 
@@ -246,6 +247,7 @@
       }
       .catalog-item__info {
         padding: 125px 60px 0 175px;
+        min-width: 45%;
       }
 
       .catalog-item__order {
@@ -274,6 +276,7 @@
       }
     }
   }
+
   .catalog-item__info {
     //flex: 1 0;
     flex-basis: auto;
