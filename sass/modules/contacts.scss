@@ -45,6 +45,10 @@
 }
 
 @media ($tablet-width) {
+
+  .contacts.container {
+    padding: 0;
+  }
   .vcard__title {
     font-size: 43px;
     line-height: 50px;
@@ -81,6 +85,10 @@
 }
 
 @media ($desktop-width) {
+  .contacts.container {
+    padding: 50px;
+  }
+
   .vcard__title {
     font-size: 53px;
     line-height: 57px;
