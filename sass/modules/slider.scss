@@ -63,3 +63,10 @@
     padding-left: 175px;
   }
 }
+
+@media ($tablet-width) and (min-resolution: 144dpi),
+($tablet-width) and (min-resolution: 1.5dppx) {
+  .slider-wrapper {
+    background-image: url('../img/review@2x.jpg');
+  }
+}

@@ -19,13 +19,16 @@
   padding: 30px 0;
 }
 
-@media ($desktop-width) {
+@media ($tablet-width) {
   .page-content__title {
     &--index {
       background-image: url('../img/hero-desktop@1x.jpg');
+      height: 640px;
     }
   }
+}
 
+@media ($desktop-width) {
   .page-content__description {
     &--form {
       padding-left: 60px;
@@ -33,7 +36,7 @@
   }
 }
 
-@media ($retina-mobile) {
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-content__title {
     &--index {
       background-image: url('../img/hero-mobile@2x.jpg');
@@ -41,7 +44,8 @@
   }
 }
 
-@media ($retina) {
+@media ($tablet-width) and (min-resolution: 144dpi),
+          ($tablet-width) and (min-resolution: 1.5dppx) {
   .page-content__title {
     &--index {
       background-image: url('../img/hero-desktop@2x.jpg');
