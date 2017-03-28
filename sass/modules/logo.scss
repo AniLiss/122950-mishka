@@ -1,4 +1,17 @@
 .logo {
   display: block;
   text-align: center;
+  width: 160px;
+
+  &--footer {
+    display: none;
+  }
+}
+
+@media ($tablet-width) {
+  .logo {
+    &--footer {
+      display: block;
+    }
+  }
 }

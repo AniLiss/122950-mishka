@@ -7,3 +7,30 @@
   line-height: 16px;
   padding-bottom: 34px;
 }
+
+@media ($desktop-width) {
+  .catalog-form {
+    .container {
+      padding-left: 225px;
+
+      &--form-footer {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 225px;
+      }
+    }
+  }
+
+  .catalog-form-section__title {
+    position: absolute;
+    left: 110px;
+  }
+
+  .catalog-form-section__option-list {
+    width: 700px;
+  }
+
+  .form-footer {
+    width: 700px;
+  }
+}

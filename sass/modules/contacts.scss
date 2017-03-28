@@ -3,6 +3,10 @@
   padding-bottom: 40px;
 }
 
+.contacts.container {
+  padding: 0;
+}
+
 .vcard {
   color: $dark-grey-color;
   padding-bottom: 40px;
@@ -12,6 +16,8 @@
 .vcard__title {
   font-size: 18px;
   padding-bottom: 44px;
+  position: relative;
+  color: $base-font-color;
 }
 
 .vcard__term {
@@ -23,6 +29,20 @@
   margin-left: 35px;
   padding-top: 40px;
   vertical-align: text-top;
+
+  &--email {
+    &:hover {
+      a {
+        color: $accent-font-color;
+      }
+    }
+
+    &:active {
+      a {
+        opacity: 0.3;
+      }
+    }
+  }
 
   &:first-of-type {
     padding: 0;
@@ -36,4 +56,98 @@
 
 .contacts__button {
   padding-top: 40px;
+
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+@media ($tablet-width) {
+
+  .contacts.container {
+    padding: 0;
+  }
+  .vcard__title {
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      background-image: url('../img/icon-flag.svg');
+      display: block;
+      width: 50px;
+      height: 80px;
+      content: '';
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-80%);
+      right: 0;
+    }
+  }
+
+  .vcard__table {
+    tbody {
+      display: flex;
+    }
+
+    tr {
+      flex-basis: 300px;
+    }
+  }
+
+  .contacts__button {
+    .btn {
+      width: 230px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .contacts.container {
+    padding: 50px;
+  }
+
+  .vcard__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      left: -135px;
+    }
+  }
+
+  .vcard__table {
+    tbody {
+      display: block;
+    }
+  }
+
+  .vcard {
+    padding: 70px 0 0 175px;
+    margin: 0;
+    flex-basis: 50%;
+    min-width: 45%;
+  }
+
+  .contacts {
+    display: flex;
+    //flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contacts__button {
+    min-width: 0;
+    padding-left: 225px;
+    padding-top: 75px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+
+    .btn {
+      margin: 0;
+    }
+  }
 }

@@ -8,28 +8,46 @@
 <body class="layout">
 <header class="page-header">
   <div class="page-header__title">
-    <a class="logo" href="#">
-      <img src="img/logo-mobile.svg" alt="logo">
-    </a>
+    <div class="container">
+      <a class="logo" href="#">
+        <img src="img/logo-mobile.svg" alt="logo">
+      </a>
 
-    <button class="page-menu-toggle page-menu-toggle--active"></button>
+      <button class="page-menu-toggle page-menu-toggle--active"></button>
+    </div>
   </div>
 
   <nav class="page-menu">
-    <ul class="page-menu__list invisible">
-      <li class="page-menu__item">
-        <a href="#">Каталог товаров</a>
+    <ul class="page-menu__list invisible container">
+      <li class="page-menu__item page-menu__item--catalog">
+        <a href="#"><span>Каталог товаров</span></a>
       </li>
-      <li class="page-menu__item">
-        <a href="#">Вязание на заказ</a>
+      <li class="page-menu__item page-menu__item--order">
+        <a href="#"><span>Вязание на заказ</span></a>
+      </li>
+      <li class="page-menu__logo">
+        <a class="logo" href="#">
+          <img src="img/logo-mobile.svg" alt="logo">
+        </a>
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--search">
-        <a href="#">Поиск по сайту</a>
+        <a href="#"><span>Поиск по сайту</span></a>
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--basket">
-        <a href="#">Корзина: пока пустa</a>
+        <a href="#"><span>Корзина: пока пустa</span></a>
       </li>
     </ul>
+  </nav>
+
+  <nav class="page-submenu container">
+    <ul class="page-submenu__list">
+      <li class="page-submenu__item">Новые поступления</li>
+      <li class="page-submenu__item">Распродажа</li>
+    </ul>
+
+    <p class="free-delivery">
+      Бесплатная доставка по России
+    </p>
   </nav>
 </header>
 
@@ -37,149 +55,192 @@
   <h1 class="page-content__title">Вязание на заказ</h1>
 
   <div class="container">
-    <p class="page-content__description">
+    <p class="page-content__description page-content__description--form">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
       уточнить
       детали.
     </p>
+  </div>
 
-    <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+  <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
 
+    <div class="container">
       <fieldset class="catalog-form__section catalog-form-section">
-        <div class="catalog-form-section__title">
-          <span>Тип</span>
-        </div>
+        <div class="fieldset-wrap">
+          <div class="catalog-form-section__title">
+            <span>Тип</span>
+          </div>
 
-        <ul class="catalog-form-section__option-list">
-          <li class="catalog-form-section__option">
-            <input id="accessory" type="radio" value="accessory" name="type">
-            <label for="accessory">Аксессуар для интерьера</label>
-          </li>
-          <li class="catalog-form-section__option">
-            <input id="toy" type="radio" value="toy" name="type">
-            <label for="toy">Детская игрушка</label>
-          </li>
-        </ul>
+          <ul class="catalog-form-section__option-list">
+            <li class="catalog-form-section__option">
+              <input id="accessory" type="radio" value="accessory" name="type">
+              <label for="accessory">Аксессуар для интерьера</label>
+            </li>
+            <li class="catalog-form-section__option">
+              <input id="toy" type="radio" value="toy" name="type">
+              <label for="toy">Детская игрушка</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
+    </div>
 
-      <fieldset class="catalog-form__section catalog-form-section">
-        <div class="catalog-form-section__title">
-          <span>Цвет</span>
+    <fieldset class="catalog-form__section catalog-form-section catalog-form-section--color">
+      <div class="container">
+        <div class="fieldset-wrap">
+          <div class="catalog-form-section__title">
+            <span>Цвет</span>
+          </div>
+          <ul class="catalog-form-section__option-list catalog-form-section__option-list--color">
+            <li class="catalog-form-section__option">
+              <input id="white" type="checkbox" value="white" name="color">
+              <label for="white">Белый</label>
+            </li>
+            <li class="catalog-form-section__option">
+              <input id="grey" type="checkbox" value="grey" name="color">
+              <label for="grey">Серый</label>
+            </li>
+            <li class="catalog-form-section__option">
+              <input id="tiffany" type="checkbox" value="tiffany" name="color">
+              <label for="tiffany">«Тиффани»</label>
+            </li>
+            <li class="catalog-form-section__option">
+              <input id="black" type="checkbox" value="black" name="color">
+              <label for="black">Черный</label>
+            </li>
+            <li class="catalog-form-section__option">
+              <input id="pink" type="checkbox" value="pink" name="color">
+              <label for="pink">Розовый</label>
+            </li>
+            <li class="catalog-form-section__option">
+              <input id="orange" type="checkbox" value="orange" name="color">
+              <label for="orange">Оранжевый</label>
+            </li>
+          </ul>
         </div>
-        <ul class="catalog-form-section__option-list">
-          <li class="catalog-form-section__option">
-            <input id="white" type="checkbox" value="white" name="color">
-            <label for="white">Белый</label>
-          </li>
-          <li class="catalog-form-section__option">
-            <input id="grey" type="checkbox" value="grey" name="color">
-            <label for="grey">Серый</label>
-          </li>
-          <li class="catalog-form-section__option">
-            <input id="tiffany" type="checkbox" value="tiffany" name="color">
-            <label for="tiffany">«Тиффани»</label>
-          </li>
-          <li class="catalog-form-section__option">
-            <input id="black" type="checkbox" value="black" name="color">
-            <label for="black">Черный</label>
-          </li>
-          <li class="catalog-form-section__option">
-            <input id="pink" type="checkbox" value="pink" name="color">
-            <label for="pink">Розовый</label>
-          </li>
-          <li class="catalog-form-section__option">
-            <input id="orange" type="checkbox" value="orange" name="color">
-            <label for="orange">Оранжевый</label>
-          </li>
-        </ul>
+      </div>
+    </fieldset>
+
+    <div class="container">
+      <fieldset class="catalog-form__section ">
+        <div class="fieldset-wrap">
+          <div class="catalog-form-section__title">
+            <span>ФИО</span>
+          </div>
+          <ul class="catalog-form-section__option-list catalog-form-section__option-list--initials">
+            <li class="catalog-form-section__option">
+              <p>
+                <label for="name">Имя:</label>
+              </p>
+              <input id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="catalog-form-section__option">
+              <p>
+                <label for="last-name">Фамилия:</label>
+              </p>
+              <input id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="catalog-form-section__option">
+              <p>
+                <label for="middle-name">Отчество:</label>
+              </p>
+              <input id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </div>
       </fieldset>
+    </div>
 
-      <fieldset class="catalog-form__section catalog-form-section">
-        <div class="catalog-form-section__title">
-          <span>ФИО</span>
+    <fieldset class="catalog-form__section catalog-form-section catalog-form-section--contacts">
+      <div class="container">
+        <div class="fieldset-wrap">
+          <div class="catalog-form-section__title">
+            <span>Тел</span>
+          </div>
+          <ul class="catalog-form-section__option-list">
+            <li class="catalog-form-section__option catalog-form-section__option--contacts">
+              <input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
+            </li>
+          </ul>
         </div>
-        <ul class="catalog-form-section__option-list">
-          <li class="catalog-form-section__option">
-            <p>
-              <label for="name">Имя:</label>
-            </p>
-            <input id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
-          </li>
-          <li class="catalog-form-section__option">
-            <p>
-              <label for="last-name">Фамилия:</label>
-            </p>
-            <input id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
-          </li>
-          <li class="catalog-form-section__option">
-            <p>
-              <label for="middle-name">Отчество:</label>
-            </p>
-            <input id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
-          </li>
-        </ul>
-      </fieldset>
+        <div class="fieldset-wrap">
+          <div class="catalog-form-section__title">
+            <span>E-mail</span>
+          </div>
+          <ul class="catalog-form-section__option-list">
+            <li class="catalog-form-section__option">
+              <input type="email" name="email" placeholder="Ваш Email*" required>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </fieldset>
 
-      <fieldset class="catalog-form__section catalog-form-section">
-        <div class="catalog-form-section__title">
-          <span>Тел</span>
-        </div>
-        <ul class="catalog-form-section__option-list">
-          <li class="catalog-form-section__option">
-            <input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="+7 [0-9]{3} [0-9]{2} [0-9]{2}" required>
-          </li>
-        </ul>
-      </fieldset>
+    <!--<fieldset class="catalog-form__section catalog-form-section">-->
+    <!--<div class="fieldset-wrap">-->
+    <!--<div class="catalog-form-section__title">-->
+    <!--<span>E-mail</span>-->
+    <!--</div>-->
+    <!--<ul class="catalog-form-section__option-list">-->
+    <!--<li class="catalog-form-section__option">-->
+    <!--<input type="email" name="email" placeholder="Ваш Email*" required>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</fieldset>-->
 
+    <div class="container">
       <fieldset class="catalog-form__section catalog-form-section">
-        <div class="catalog-form-section__title">
-          <span>E-mail</span>
-        </div>
-        <ul class="catalog-form-section__option-list">
-          <li class="catalog-form-section__option">
-            <input type="email" name="email" placeholder="Ваш Email*" required>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="catalog-form__section catalog-form-section">
-        <div class="catalog-form-section__title">
-          <span>Доп</span>
-        </div>
-        <ul class="catalog-form-section__option-list">
-          <li class="catalog-form-section__option">
+        <div class="fieldset-wrap">
+          <div class="catalog-form-section__title">
+            <span>Доп</span>
+          </div>
+          <ul class="catalog-form-section__option-list">
+            <li class="catalog-form-section__option">
             <textarea name="extra-info" cols="30" rows="10"
                       placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </fieldset>
+    </div>
 
-      <p class="catalog-form__prompt">*Поля обязательны для заполнения</p>
+    <div class="container container--form-footer">
+      <div class="form-footer">
+        <p class="catalog-form__prompt">*Поля обязательны для заполнения</p>
 
-      <button class="btn">Отправить заказ</button>
-    </form>
-  </div>
+        <button class="btn">Отправить заказ</button>
+      </div>
+    </div>
+  </form>
+  <!--</div>-->
 </main>
 
 <footer class="page-footer">
   <div class="container">
-    <div class="social-links">
-      <a class="social-links__item social-links__item--inst" href="#">
-        <img src="img/icon-insta.svg" alt="">
+    <div class="footer-wrapper">
+      <a class="logo logo--footer" href="#">
+        <img src="img/logo-mobile.svg" alt="logo">
       </a>
-      <a class="social-links__item social-links__item--fb" href="#">
-        <img src="img/icon-fb.svg" alt="">
-      </a>
-      <a class="social-links__item social-links__item--tw" href="#">
-        <img src="img/icon-twitter.svg" alt="">
-      </a>
-    </div>
 
-    <div class="copyright">
-      <span>Разработано</span>
-      <a class="html-academy-logo" href="#">
-        <img src="img/logo-htmlacademy.svg" alt="html-academy">
-      </a>
+      <div class="social-links">
+        <a class="social-links__item social-links__item--inst" href="#">
+          <img src="img/icon-insta.svg" alt="">
+        </a>
+        <a class="social-links__item social-links__item--fb" href="#">
+          <img src="img/icon-fb.svg" alt="">
+        </a>
+        <a class="social-links__item social-links__item--tw" href="#">
+          <img src="img/icon-twitter.svg" alt="">
+        </a>
+      </div>
+
+      <div class="copyright">
+        <span>Разработано</span>
+        <a class="html-academy-logo" href="#">
+          <img src="img/logo-htmlacademy.svg" alt="html-academy">
+        </a>
+      </div>
     </div>
   </div>
 </footer>

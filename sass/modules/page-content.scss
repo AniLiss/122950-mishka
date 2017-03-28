@@ -18,3 +18,11 @@
   font-size: 13px;
   padding: 30px 0;
 }
+
+@media ($desktop-width) {
+  .page-content__description {
+    &--form {
+      padding-left: 60px;
+    }
+  }
+}

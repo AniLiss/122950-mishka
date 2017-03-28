@@ -8,35 +8,53 @@
 <body class="layout">
 <header class="page-header">
   <div class="page-header__title">
-    <a class="logo" href="#">
-      <img src="img/logo-mobile.svg" alt="logo">
-    </a>
+    <div class="container">
+      <a class="logo" href="#">
+        <img src="img/logo-mobile.svg" alt="logo">
+      </a>
 
-    <button class="page-menu-toggle page-menu-toggle--active"></button>
+      <button class="page-menu-toggle page-menu-toggle--active"></button>
+    </div>
   </div>
 
   <nav class="page-menu">
-    <ul class="page-menu__list invisible">
-      <li class="page-menu__item">
-        <a href="#">Каталог товаров</a>
+    <ul class="page-menu__list invisible container">
+      <li class="page-menu__item page-menu__item--catalog">
+        <a href="#"><span>Каталог товаров</span></a>
       </li>
-      <li class="page-menu__item">
-        <a href="#">Вязание на заказ</a>
+      <li class="page-menu__item page-menu__item--order">
+        <a href="#"><span>Вязание на заказ</span></a>
+      </li>
+      <li class="page-menu__logo">
+        <a class="logo" href="#">
+          <img src="img/logo-mobile.svg" alt="logo">
+        </a>
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--search">
-        <a href="#">Поиск по сайту</a>
+        <a href="#"><span>Поиск по сайту</span></a>
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--basket">
-        <a href="#">Корзина: пока пустa</a>
+        <a href="#"><span>Корзина: пока пустa</span></a>
       </li>
     </ul>
+  </nav>
+
+  <nav class="page-submenu container">
+    <ul class="page-submenu__list">
+      <li class="page-submenu__item">Новые поступления</li>
+      <li class="page-submenu__item">Распродажа</li>
+    </ul>
+
+    <p class="free-delivery">
+      Бесплатная доставка по России
+    </p>
   </nav>
 </header>
 
 <main class="page-content">
   <h1 class="page-content__title page-content__title--index">Милые штуки ручной работы для дома</h1>
 
-  <div class="pagination">
+  <div class="pagination container">
     <a class="pagination__item pagination__item--interior container" href="#">
       <p>Предметы интерьера</p>
     </a>
@@ -48,33 +66,42 @@
 
   <div class="container">
     <article class="catalog-item catalog-item--popular">
-      <h2 class="section-title">Вязаные корзинки</h2>
-      <h3 class="catalog-item__subtitle">Товар недели</h3>
-      <p class="catalog-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-        размерах.</p>
-
-      <table class="catalog-item__details">
-        <tr>
-          <td>Цвет:</td>
-          <td>«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td>Диаметр:</td>
-          <td>25 см</td>
-        </tr>
-        <tr>
-          <td>Высота:</td>
-          <td>15 см</td>
-        </tr>
-      </table>
-
-      <img class="catalog-item__preview" src="img/triple-set-mobile@1x.jpg" alt="basket">
-
-      <div class="catalog-item__price">
-        <span>Цена: 990 руб.</span>
+      <div class="catalog-item__title">
+        <h2 class="section-title">Вязаные корзинки</h2>
+        <h3 class="catalog-item__subtitle">Товар недели</h3>
       </div>
 
-      <button type="button" class="btn">Заказать</button>
+      <div class="catalog-item__info">
+        <p class="catalog-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
+          трех
+          размерах.</p>
+        <table class="catalog-item__details">
+          <tr>
+            <td>Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="catalog-item__preview">
+        <!--<img src="img/triple-set-mobile@1x.jpg" alt="basket">-->
+      </div>
+
+      <div class="catalog-item__order">
+        <div class="catalog-item__price">
+          <span>Цена: 990 руб.</span>
+        </div>
+
+        <button type="button" class="btn">Заказать</button>
+      </div>
     </article>
 
     <section class="about">
@@ -130,16 +157,16 @@
     </div>
   </div>
 
-  <div class="contacts">
+  <div class="contacts container">
     <div class="vcard container">
       <h3 class="vcard__title">Контакты</h3>
       <!--<p class="vcard__email">e-mail: <a class="vcard__definition" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>-->
       <!--<p class="vcard__address">адрес: <span class="vcard__definition">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span></p>-->
 
-      <table class="catalog-item__details">
+      <table class="vcard__table">
         <tr>
           <td class="vcard__term vcard__term--email">e-mail:</td>
-          <td class="vcard__definition"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+          <td class="vcard__definition vcard__definition--email"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
         </tr>
         <tr>
           <td class="vcard__term vcard__term__address">адрес:</td>
@@ -160,23 +187,29 @@
 
 <footer class="page-footer">
   <div class="container">
-    <div class="social-links">
-      <a class="social-links__item social-links__item--inst" href="#">
-        <img src="img/icon-insta.svg" alt="">
+    <div class="footer-wrapper">
+      <a class="logo logo--footer" href="#">
+        <img src="img/logo-mobile.svg" alt="logo">
       </a>
-      <a class="social-links__item social-links__item--fb" href="#">
-        <img src="img/icon-fb.svg" alt="">
-      </a>
-      <a class="social-links__item social-links__item--tw" href="#">
-        <img src="img/icon-twitter.svg" alt="">
-      </a>
-    </div>
 
-    <div class="copyright">
-      <span>Разработано</span>
-      <a class="html-academy-logo" href="#">
-        <img src="img/logo-htmlacademy.svg" alt="html-academy">
-      </a>
+      <div class="social-links">
+        <a class="social-links__item social-links__item--inst" href="#">
+          <img src="img/icon-insta.svg" alt="">
+        </a>
+        <a class="social-links__item social-links__item--fb" href="#">
+          <img src="img/icon-fb.svg" alt="">
+        </a>
+        <a class="social-links__item social-links__item--tw" href="#">
+          <img src="img/icon-twitter.svg" alt="">
+        </a>
+      </div>
+
+      <div class="copyright">
+        <span>Разработано</span>
+        <a class="html-academy-logo" href="#">
+          <img src="img/logo-htmlacademy.svg" alt="html-academy">
+        </a>
+      </div>
     </div>
   </div>
 </footer>

@@ -1,0 +1,9 @@
+.free-delivery {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .free-delivery {
+    display: block;
+  }
+}

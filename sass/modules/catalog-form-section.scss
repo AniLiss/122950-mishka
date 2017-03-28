@@ -4,6 +4,18 @@
   padding: 0;
 }
 
+.catalog-form-section {
+  &--contacts {
+    .fieldset-wrap {
+      margin-bottom: 33px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .catalog-form-section__title {
   font-size: 17px;
   font-family: $base-font-bold;
@@ -123,4 +135,110 @@ input[type='email'] {
     border: 0;
     border-bottom: 2px solid $base-font-color;
   }
+}
+
+@media ($tablet-width) {
+  .catalog-form {
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin: 0;
+    }
+  }
+
+  .catalog-form-section,
+  .catalog-form__section {
+    margin: 0;
+
+    &--color {
+      .container {
+        padding-bottom: 10px;
+      }
+    }
+    &--color,
+    &--contacts {
+      background-color: #f1f1f1;
+
+      input {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+
+  .catalog-form-section__title {
+    &::after {
+      display: none;
+    }
+  }
+
+  .catalog-form-section__option-list {
+    width: 500px;
+
+    .catalog-form-section__option {
+      padding-bottom: 40px;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+
+      &--contacts {
+        &:last-of-type {
+          padding-bottom: 40px;
+        }
+      }
+    }
+
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+
+      input + label {
+        &::before {
+          border: 9px solid #f1f1f1;
+        }
+      }
+
+      .catalog-form-section__option {
+        width: 200px;
+      }
+    }
+
+    &--initials {
+      p {
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+      }
+
+      .catalog-form-section__option {
+        display: flex;
+      }
+    }
+  }
+
+  .fieldset-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .catalog-form__prompt {
+    align-items: center;
+      padding-bottom: 0;
+    }
+
+    .btn {
+      max-width: 230px;
+      order: -1;
+    }
+  }
+}
+
+@media ($desktop-width) {
+
 }

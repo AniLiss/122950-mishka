@@ -6,9 +6,9 @@
 .about__item {
   font-size: 17px;
   color: $dark-grey-color;
-  padding-top: 35px;
+  padding-bottom: 35px;
 
-  &:first-of-type {
+  &:last-of-type {
     padding: 0;
   }
 
@@ -57,5 +57,23 @@
     &::before {
       background-image: url('../img/icon-feature-6.svg');
     }
+  }
+}
+
+@media ($tablet-width) {
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 630px
+  }
+
+  .about__item {
+    flex-basis: 250px;
+  }
+}
+
+@media ($desktop-width) {
+  .about {
+    padding-left: 175px;
   }
 }

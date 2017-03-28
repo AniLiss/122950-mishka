@@ -1,0 +1,21 @@
+.page-submenu {
+  //position: absolute;
+  display: none;
+}
+
+.page-submenu__list {
+  display: flex;
+}
+
+.page-submenu__item {
+  padding-right: 50px;
+}
+
+@media ($desktop-width) {
+  .page-submenu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -40px;
+    padding-top: 18px;
+  }
+}

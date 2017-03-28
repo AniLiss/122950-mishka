@@ -8,28 +8,46 @@
 <body class="layout">
 <header class="page-header">
   <div class="page-header__title">
-    <a class="logo" href="#">
-      <img src="img/logo-mobile.svg" alt="logo">
-    </a>
+    <div class="container">
+      <a class="logo" href="#">
+        <img src="img/logo-mobile.svg" alt="logo">
+      </a>
 
-    <button class="page-menu-toggle page-menu-toggle--active"></button>
+      <button class="page-menu-toggle page-menu-toggle--active"></button>
+    </div>
   </div>
 
   <nav class="page-menu">
-    <ul class="page-menu__list invisible">
-      <li class="page-menu__item">
-        <a href="#">Каталог товаров</a>
+    <ul class="page-menu__list invisible container">
+      <li class="page-menu__item page-menu__item--catalog">
+        <a href="#"><span>Каталог товаров</span></a>
       </li>
-      <li class="page-menu__item">
-        <a href="#">Вязание на заказ</a>
+      <li class="page-menu__item page-menu__item--order">
+        <a href="#"><span>Вязание на заказ</span></a>
+      </li>
+      <li class="page-menu__logo">
+        <a class="logo" href="#">
+          <img src="img/logo-mobile.svg" alt="logo">
+        </a>
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--search">
-        <a href="#">Поиск по сайту</a>
+        <a href="#"><span>Поиск по сайту</span></a>
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--basket">
-        <a href="#">Корзина: пока пустa</a>
+        <a href="#"><span>Корзина: пока пустa</span></a>
       </li>
     </ul>
+  </nav>
+
+  <nav class="page-submenu container">
+    <ul class="page-submenu__list">
+      <li class="page-submenu__item">Новые поступления</li>
+      <li class="page-submenu__item">Распродажа</li>
+    </ul>
+
+    <p class="free-delivery">
+      Бесплатная доставка по России
+    </p>
   </nav>
 </header>
 
@@ -38,7 +56,7 @@
 
   <div class="container">
     <div class="catalog-list">
-      <article class="catalog-item">
+      <article class="catalog-item catalog-item--decorated">
         <a class="catalog-item__preview" href="#">
           <img src="img/photo-1-mobile@1x.jpg" alt="rabbit">
         </a>
@@ -54,7 +72,7 @@
         </div>
       </article>
 
-      <article class="catalog-item">
+      <article class="catalog-item catalog-item--decorated">
         <a class="catalog-item__preview" href="#">
           <img src="img/photo-2-mobile@1x.jpg" alt="laundry basket">
         </a>
@@ -70,7 +88,7 @@
         </div>
       </article>
 
-      <article class="catalog-item">
+      <article class="catalog-item catalog-item--decorated">
         <a class="catalog-item__preview" href="#">
           <img src="img/photo-3-mobile@1x.jpg" alt=" basket for toys">
         </a>
@@ -86,7 +104,7 @@
         </div>
       </article>
 
-      <article class="catalog-item ">
+      <article class="catalog-item catalog-item--creation">
         <h2 class="catalog-item__title catalog-item__title--creation">Процесс производства</h2>
         <a class="catalog-item__preview" href="#">
           <img src="img/video-mobile@1x.jpg" alt="the development process">
@@ -95,7 +113,9 @@
           <p class="catalog-item__description catalog-item__description--creation">По просьбам наших любимых фолловеров
             мы сняли для вас подробное видео о том,
             как появляются наши товары.</p>
-          <button type="button" class="btn">Сделать заказ</button>
+          <div>
+            <button type="button" class="btn">Сделать заказ</button>
+          </div>
         </div>
 
       </article>
@@ -105,23 +125,29 @@
 
 <footer class="page-footer">
   <div class="container">
-    <div class="social-links">
-      <a class="social-links__item social-links__item--inst" href="#">
-        <img src="img/icon-insta.svg" alt="">
+    <div class="footer-wrapper">
+      <a class="logo logo--footer" href="#">
+        <img src="img/logo-mobile.svg" alt="logo">
       </a>
-      <a class="social-links__item social-links__item--fb" href="#">
-        <img src="img/icon-fb.svg" alt="">
-      </a>
-      <a class="social-links__item social-links__item--tw" href="#">
-        <img src="img/icon-twitter.svg" alt="">
-      </a>
-    </div>
 
-    <div class="copyright">
-      <span>Разработано</span>
-      <a class="html-academy-logo" href="#">
-        <img src="img/logo-htmlacademy.svg" alt="html-academy">
-      </a>
+      <div class="social-links">
+        <a class="social-links__item social-links__item--inst" href="#">
+          <img src="img/icon-insta.svg" alt="">
+        </a>
+        <a class="social-links__item social-links__item--fb" href="#">
+          <img src="img/icon-fb.svg" alt="">
+        </a>
+        <a class="social-links__item social-links__item--tw" href="#">
+          <img src="img/icon-twitter.svg" alt="">
+        </a>
+      </div>
+
+      <div class="copyright">
+        <span>Разработано</span>
+        <a class="html-academy-logo" href="#">
+          <img src="img/logo-htmlacademy.svg" alt="html-academy">
+        </a>
+      </div>
     </div>
   </div>
 </footer>

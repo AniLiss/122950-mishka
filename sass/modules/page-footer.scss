@@ -3,17 +3,12 @@
   background-color: #f1f1f1;
 }
 
-.social-links {
-  padding: 22px 0;
-}
-
 .social-links__item {
   padding-right: 30px;
 }
 
 .copyright {
   font-size: 19px;
-  padding: 21px 0;
   border-top: 1px solid #ececec;
   font-family: $base-font-bold;
   display: flex;
@@ -29,7 +24,7 @@
   background-image: url(../img/map-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
+  width: 100%;
   height: 460px;
   position: relative;
 
@@ -47,3 +42,31 @@
   }
 }
 
+.footer-wrapper {
+  & > * {
+    padding: 25px 0;
+  }
+}
+
+@media ($tablet-width) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media ($desktop-width) {
+  .map {
+    flex-basis: 50%;
+    //max-width: 425px;
+
+    //margin: 0 50px;
+    //width: auto;
+  }
+
+  .page-footer {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}
