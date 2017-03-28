@@ -47,6 +47,10 @@
   .logo {
     display: none;
     margin: 0 auto;
+    background-image: url('../img/logo-mobile.svg');
+    width: 85px;
+    height: 35px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -113,6 +117,17 @@
 
     .logo {
       display: block;
+      background-image: url('../img/logo-tablet.svg');
+      width: 113px;
+      height: 46px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -128,6 +143,14 @@
 
     &--catalog {
       border-right: 1px solid #f1f1f1;
+    }
+  }
+
+  .page-menu__logo {
+    .logo {
+      background-image: url('../img/logo-desktop.svg');
+      width: 150px;
+      height: 75px;
     }
   }
 }

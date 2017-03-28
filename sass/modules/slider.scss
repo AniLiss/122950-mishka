@@ -20,6 +20,12 @@
 }
 
 @media ($tablet-width) {
+  .slider-wrapper {
+    background-image: url('../img/review@1x.jpg');
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+
   .slider {
     position: relative;
 
@@ -45,6 +51,14 @@
 }
 
 @media ($desktop-width) {
+  .slider-wrapper {
+    background-size: 350px;
+  }
+
+  .slider-wrapper.container {
+    padding: 0;
+  }
+
   .slider {
     padding-left: 175px;
   }
