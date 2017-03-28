@@ -50,6 +50,7 @@
 .page-menu__logo {
   .logo {
     display: none;
+    margin: 0 auto;
   }
 }
 
@@ -116,7 +117,6 @@
     flex-grow: 2;
 
     .logo {
-      margin: 0;
       display: block;
     }
   }
