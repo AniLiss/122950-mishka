@@ -49,6 +49,10 @@
 }
 
 @media ($tablet-width) {
+  .map {
+    background-image: url('../img/map-tablet@1x.jpg');
+  }
+
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
@@ -58,11 +62,38 @@
 @media ($desktop-width) {
   .map {
     flex-basis: 50%;
+    background-image: url('../img/map-desktop@1x.jpg');
   }
 
   .page-footer {
     .container {
       padding-left: 50px;
+    }
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-content__title {
+    &--index {
+      background-image: url('../img/map-mobile@2x.jpg');
+    }
+  }
+}
+
+@media ($tablet-width) and (min-resolution: 144dpi),
+($tablet-width) and (min-resolution: 1.5dppx) {
+  .page-content__title {
+    &--index {
+      background-image: url('../img/map-tablet@2x.jpg');
+    }
+  }
+}
+
+@media ($desktop-width) and (min-resolution: 144dpi),
+($desktop-width) and (min-resolution: 1.5dppx) {
+  .page-content__title {
+    &--index {
+      background-image: url('../img/map-desktop@2x.jpg');
     }
   }
 }

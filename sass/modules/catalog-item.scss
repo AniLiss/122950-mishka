@@ -173,7 +173,7 @@
 
       .catalog-item__preview {
         flex-basis: 50%;
-        background-image: url(../img/triple-set-mobile@1x.jpg);
+        background-image: url(../img/triple-set-tablet@1x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -243,6 +243,7 @@
       }
 
       .catalog-item__preview {
+        background-image: url(../img/triple-set-desktop@1x.jpg);
         margin: 0;
         z-index: -1;
         height: 635px;
@@ -297,7 +298,38 @@
   }
   .catalog-item__preview {
     flex-basis: auto;
-    height: 195px;
     overflow: hidden;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .catalog-item {
+    &--popular {
+      .catalog-item__preview {
+        background-image: url(../img/triple-set-mobile@2x.jpg);
+      }
+    }
+  }
+}
+
+@media ($tablet-width) and (min-resolution: 144dpi),
+($tablet-width) and (min-resolution: 1.5dppx) {
+  .catalog-item {
+    &--popular {
+      .catalog-item__preview {
+        background-image: url(../img/triple-set-tablet@2x.jpg);
+      }
+    }
+  }
+}
+
+@media ($desktop-width) and (min-resolution: 144dpi),
+($desktop-width) and (min-resolution: 1.5dppx) {
+  .catalog-item {
+    &--popular {
+      .catalog-item__preview {
+        background-image: url(../img/triple-set-desktop@2x.jpg);
+      }
+    }
   }
 }
