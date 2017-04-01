@@ -1,13 +1,6 @@
 .about {
   padding-top: 40px;
   padding-bottom: 25px;
-
-  &::before {
-    content: '';
-    display: block;
-    background-image: url('../../img/bg-zigzag-line.svg');
-    background-size: 100% 10px;
-  }
 }
 
 .about__item {
