@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="layout">
+
 <header class="page-header">
   <div class="page-header__title">
     <div class="container">
@@ -71,7 +72,10 @@
           <div class="catalog-item__price">
             <span>1200 руб.</span>
             <div class="basket-btn">
-              <img src="img/icon-cart.svg" alt="basket">
+              <!--<img src="img/icon-cart.svg" alt="basket">-->
+              <svg width="21" height="19" >
+                <use xlink:href="img/symbols.svg/#icon-cart"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -91,7 +95,9 @@
           <div class="catalog-item__price">
             <span>690 руб.</span>
             <div class="basket-btn">
-              <img src="img/icon-cart.svg" alt="basket">
+              <svg width="21" height="19" >
+                <use xlink:href="img/symbols.svg/#icon-cart"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -111,7 +117,9 @@
           <div class="catalog-item__price">
             <span>1 500 руб.</span>
             <div class="basket-btn">
-              <img src="img/icon-cart.svg" alt="basket">
+              <svg width="21" height="19" >
+                <use xlink:href="img/symbols.svg/#icon-cart"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -119,13 +127,17 @@
 
       <article class="catalog-item catalog-item--creation">
         <h2 class="catalog-item__title catalog-item__title--creation">Процесс производства</h2>
-        <a class="catalog-item__preview" href="#">
+        <div class="catalog-item__preview" href="#">
+          <video class="catalog-item__video"></video>
           <picture>
             <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
             <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="the development process">
           </picture>
-        </a>
+          <div class="btn-play">
+            <img src="img/icon-play.svg" width="101" height="77" alt="">
+          </div>
+        </div>
         <div class="catalog-item__info">
           <p class="catalog-item__description catalog-item__description--creation">По просьбам наших любимых фолловеров
             мы сняли для вас подробное видео о том,
@@ -144,25 +156,35 @@
   <div class="container">
     <div class="footer-wrapper">
       <a class="logo logo--footer" href="#">
-        <img src="img/logo-mobile.svg" alt="logo">
+        <svg width="86" height="35" >
+          <use xlink:href="img/symbols.svg/#logo-footer"></use>
+        </svg>
       </a>
 
       <div class="social-links">
         <a class="social-links__item social-links__item--inst" href="#">
-          <img src="img/icon-insta.svg" alt="">
+          <svg width="22" height="22" >
+            <use xlink:href="img/symbols.svg/#icon-insta"></use>
+          </svg>
         </a>
         <a class="social-links__item social-links__item--fb" href="#">
-          <img src="img/icon-fb.svg" alt="">
+          <svg width="15" height="28" >
+            <use xlink:href="img/symbols.svg/#icon-fb"></use>
+          </svg>
         </a>
         <a class="social-links__item social-links__item--tw" href="#">
-          <img src="img/icon-twitter.svg" alt="">
+          <svg width="23" height="20" >
+            <use xlink:href="img/symbols.svg/#icon-twitter"></use>
+          </svg>
         </a>
       </div>
 
       <div class="copyright">
         <span>Разработано</span>
         <a class="html-academy-logo" href="#">
-          <img src="img/logo-htmlacademy.svg" alt="html-academy">
+          <svg width="28" height="35">
+            <use xlink:href="img/symbols.svg/#logo-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>

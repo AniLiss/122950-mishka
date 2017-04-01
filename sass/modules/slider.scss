@@ -17,6 +17,18 @@
   font-size: 0;
   width: 50%;
   border-collapse: collapse;
+
+  &:hover {
+    svg {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media ($tablet-width) {

@@ -76,6 +76,18 @@
   .page-menu__item {
     border: none;
 
+    &:hover {
+      span {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      span {
+        opacity: 0.3;
+      }
+    }
+
     &--catalog,
     &--order {
       position: absolute;
