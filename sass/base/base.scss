@@ -37,5 +37,15 @@ img {
 }
 
 .invisible {
-  //display: none;
+  display: none;
+}
+
+.svg-sprite {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .invisible {
+    //display: block;
+  }
 }

@@ -16,6 +16,14 @@
     }
   }
 
+  &--modal,
+  &--modal:hover,
+  &--modal:active {
+    color: #fff;
+    background-color: $accent-font-color;
+    border: none;
+  }
+
   font-size: 17px;
   text-transform: uppercase;
   color: $dark-grey-color;
