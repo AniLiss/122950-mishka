@@ -27,6 +27,7 @@
 
   span {
     min-width: 70px;
+    padding-top: 16px;
   }
 
   &::after {
@@ -43,11 +44,11 @@ input[type='tel'] {
   content: '';
   display: block;
   width: 30px;
-  height: 30px;
+  //height: 30px;
   background-repeat: no-repeat;
   background-image: url('../img/icon-phone.svg');
   background-size: 25px;
-  background-position: 100% 0;
+  background-position: 100% 16px;
 
   &:hover,
   &:active {
@@ -59,11 +60,11 @@ input[type='email'] {
   content: '';
   display: block;
   width: 30px;
-  height: 30px;
+  //height: 30px;
   background-repeat: no-repeat;
   background-image: url('../img/icon-mail.svg');
   background-size: 25px;
-  background-position: 100% 0;
+  background-position: 100% 16px;
 
   &:hover,
   &:active {
