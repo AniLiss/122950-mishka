@@ -7,10 +7,10 @@
   line-height: 30px;
   text-align: center;
   background-color: #f1f1f1;
-  padding: 75px 0;
+  padding: 70px 45px;
 
   &--index {
-    padding-bottom: 130px;
+    padding-bottom: 120px;
     background-image: url('../img/hero-mobile@1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,24 @@
     &--index {
       background-image: url('../img/hero-desktop@1x.jpg');
       height: 640px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        background-image: url(../img/bg-zigzag-fill.svg);
+        width: 100%;
+        height: 34px;
+        bottom: 0;
+        z-index: 1;
+        left: 0;
+        position: absolute;
+      }
     }
+  }
+
+  .pagination {
+
   }
 }
 
@@ -40,6 +57,13 @@
   .page-content__description {
     &--form {
       padding-left: 60px;
+    }
+  }
+
+  .page-content__title {
+    &--index {
+      background-image: url('../img/hero-desktop@1x.jpg');
+      height: 855px;
     }
   }
 }
