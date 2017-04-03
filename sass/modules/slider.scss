@@ -1,11 +1,17 @@
 .slider {
   padding-top: 40px;
   padding-bottom: 40px;
+  .btn {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .slider__controls {
   padding: 40px 0 35px;
   display: flex;
+
+
 }
 
 .slider__control {
@@ -17,6 +23,22 @@
   font-size: 0;
   width: 50%;
   border-collapse: collapse;
+
+  &:hover {
+    svg {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.slider-wrapper.container {
+  min-width: 100%;
 }
 
 @media ($tablet-width) {
@@ -48,6 +70,10 @@
     right: 0;
     bottom: 0;
   }
+
+  .slider-wrapper.container {
+    min-width: 100%;
+  }
 }
 
 @media ($desktop-width) {
@@ -57,6 +83,7 @@
 
   .slider-wrapper.container {
     padding: 0;
+    min-width: 100%;
   }
 
   .slider {

@@ -46,6 +46,20 @@
   & > * {
     padding: 25px 0;
   }
+
+  a {
+    &:hover {
+      svg {
+        fill: $accent-font-color;
+      }
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
 }
 
 @media ($tablet-width) {

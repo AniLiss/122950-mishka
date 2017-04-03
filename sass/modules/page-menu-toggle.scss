@@ -1,8 +1,8 @@
 .page-menu-toggle {
-  width: 20px;
-  height: 14px;
+  width: 21px;
+  height: 21px;
   cursor: pointer;
-  background-image: url('../img/icon-menu-open.svg');
+  background-image: url('../img/icon-menu-close.svg');
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -10,4 +10,10 @@
   right: 21px;
   transform: translateY(-50%);
   top: 50%;
+
+  &--cancel {
+    width: 20px;
+    height: 14px;
+    background-image: url('../img/icon-menu-open.svg');
+  }
 }

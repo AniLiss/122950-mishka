@@ -1,3 +1,11 @@
+.page-menu {
+  position: absolute;
+  background-color: white;
+  //display: block;
+  width: 100%;
+  //z-index: 1;
+}
+
 .page-menu__item {
   position: relative;
   font-size: 17px;
@@ -5,26 +13,41 @@
   line-height: 24px;
   border-bottom: 1px solid #ececec;
 
+  &:hover {
+    svg {
+      fill: #63d1bb;
+    }
+    span {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+
+    span {
+      opacity: 0.3;
+    }
+  }
+
   &--decorated {
-    a {
-      &::before {
-        content: '';
-        width: 20px;
-        height: 20px;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
+    div {
+     position: relative;
+    }
+
+    svg {
+      position: absolute;
+      left: -35px;
+      fill: #d3d2d2;
     }
   }
 
   &--search {
     a {
       &::before {
-        background-image: url('../img/icon-search.svg');
+        //background-image: url('../img/icon-search.svg');
       }
     }
   }
@@ -32,7 +55,7 @@
   &--basket {
     a {
       &::before {
-        background-image: url('../img/icon-cart.svg');
+        //background-image: url('../img/icon-cart.svg');
       }
     }
   }
@@ -61,6 +84,12 @@
 @media ($tablet-width) {
   .page-menu {
     border-bottom: 1px solid #f1f1f1;
+    position: static;
+    display: block;
+
+    .invisible {
+      display: block;
+    }
   }
   .page-menu__list {
     display: flex;
@@ -75,6 +104,18 @@
 
   .page-menu__item {
     border: none;
+
+    &:hover {
+      span {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      span {
+        opacity: 0.3;
+      }
+    }
 
     &--catalog,
     &--order {
@@ -97,9 +138,8 @@
         display: none;
       }
 
-      a {
-        padding-top: 58px;
-        padding-right: 45px;
+      svg {
+        position: static;
       }
     }
 
@@ -116,6 +156,7 @@
     flex-grow: 2;
 
     .logo {
+      margin: 0;
       display: block;
       background-image: url('../img/logo-tablet.svg');
       width: 113px;
@@ -147,7 +188,9 @@
   }
 
   .page-menu__logo {
+    padding: 0;
     .logo {
+      margin: 0 auto;
       background-image: url('../img/logo-desktop.svg');
       width: 150px;
       height: 75px;
