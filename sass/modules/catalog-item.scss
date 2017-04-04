@@ -19,7 +19,8 @@
   &--popular {
     font-size: 15px;
     border: none;
-    margin-top: 35px;
+    //margin-top: 35px;
+    margin-top: 25px;
     padding-bottom: 35px;
     flex-direction: column;
 
@@ -29,13 +30,15 @@
       color: $accent-font-color;
       text-transform: uppercase;
       font-family: $base-font-bold;
+      padding-top: 5px;
     }
 
     .catalog-item__info {
       padding: 0;
     }
     .catalog-item__description {
-      padding: 35px 0;
+      padding: 20px 0 15px;
+      line-height: 25px;
     }
 
     .catalog-item__details {
@@ -44,7 +47,7 @@
 
       td {
         border-bottom: 1px solid #ececec;
-        padding: 14px 0;
+        padding: 10px 0;
 
         &:first-child {
           padding-right: 22px;
@@ -63,11 +66,17 @@
     .catalog-item__price {
       font-size: 17px;
       text-align: center;
-      padding-bottom: 30px;
+      padding-bottom: 25px;
+
+      span {
+        display: block;
+        margin: 0 auto;
+      }
     }
 
     .section-title {
       padding: 0;
+      margin-top: 5px;
     }
   }
 
@@ -175,8 +184,9 @@
       flex-direction: row;
 
       img {
-        position: absolute;
-        height: 405px;
+        //position: absolute;
+        //height: 405px;
+        display: none;
       }
 
       .catalog-item__title {

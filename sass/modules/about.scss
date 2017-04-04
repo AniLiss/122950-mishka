@@ -1,19 +1,33 @@
 .about {
   padding-top: 40px;
+  //padding-top: 0;
   padding-bottom: 25px;
+  position: relative;
+  margin-top: 35px;
+  //&::before {
+  //  content: '';
+  //  display: block;
+  //  background-image: url('../../img/bg-zigzag-line.svg');
+  //  background-size: 100% 10px;
+  //}
 
-  &::before {
-    content: '';
-    display: block;
-    background-image: url('../../img/bg-zigzag-line.svg');
-    background-size: 100% 10px;
-  }
+  //&::after {
+  //  content: '';
+  //  width: 100%;
+  //  height: 7px;
+  //  background-image: url(../img/bg-zigzag-line.svg);
+  //  background-size: auto 7px;
+  //  display: block;
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //}
 }
 
 .about__item {
   font-size: 17px;
   color: $dark-grey-color;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 
   &:last-of-type {
     padding: 0;
@@ -24,7 +38,7 @@
     width: 55px;
     height: 40px;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-repeat: no-repeat;
 
   }

@@ -23,7 +23,7 @@
 
   &--toys {
     &:hover {
-      height: 125px;
+      //height: 125px;
 
       p {
         margin-bottom: 10px;
@@ -43,7 +43,7 @@
 
   &--interior {
     &:hover {
-      height: 125px;
+      //height: 125px;
 
       p {
         margin-bottom: 10px;
@@ -82,8 +82,10 @@
   }
 
   p {
+    font-family: $base-font-bold;
     width: 40px;
-    font-size: 21px;
+    font-size: 19px;
+    font-weight: bold;
   }
 }
 
