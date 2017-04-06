@@ -6,11 +6,12 @@
 
 @media ($tablet-width) {
   .section-title {
-    font-size: 43px;
+    font-size: 46px;
+    padding-bottom: 45px;
   }
 }
 
-@media ($tablet-width) {
+@media ($desktop-width) {
   .section-title {
     font-size: 53px;
   }

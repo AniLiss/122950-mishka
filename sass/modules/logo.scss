@@ -12,6 +12,10 @@
   .logo {
     &--footer {
       display: block;
+
+      svg {
+        width: 100px;
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 .slider {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+
   .btn {
     margin: 0 auto;
     display: block;
@@ -8,7 +9,7 @@
 }
 
 .slider__controls {
-  padding: 40px 0 35px;
+  padding: 30px 0 35px;
   display: flex;
 
 
@@ -41,60 +42,74 @@
   min-width: 100%;
 }
 
-@media ($tablet-width) {
-  .slider-wrapper {
-    background-image: url('../img/review@1x.jpg');
-    background-size: 50%;
-    background-repeat: no-repeat;
+.slider {
+  .section-title {
+    padding-bottom: 25px;
   }
+}
 
-  .slider {
-    position: relative;
-    margin-bottom: 40px;
+  @media ($tablet-width) {
+    .slider-wrapper {
+      background-image: url('../img/review@1x.jpg');
+      background-size: 45%;
+      background-repeat: no-repeat;
+    }
 
-    .btn {
-      max-width: 176px;
+    .slider {
+      position: relative;
+      margin-bottom: 65px;
+      padding-top: 73px;
+
+      .section-title {
+        padding-bottom: 45px;
+      }
+
+      .btn {
+        max-width: 176px;
+        position: absolute;
+        top: 33px;
+        transform: translateY(80%);
+        right: 0;
+      }
+    }
+
+    .slider__control {
+      max-width: 140px;
+      padding: 12px 20px;
+      border: none;
+    }
+
+    .slider__controls {
       position: absolute;
-      top: 0;
-      transform: translateY(80%);
       right: 0;
+      bottom: 16px;
+    }
+
+    .slider-wrapper.container {
+      min-width: 100%;
     }
   }
 
-  .slider__control {
-    max-width: 140px;
-    padding: 12px 15px;
-    border: none;
-  }
-  .slider__controls {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  @media ($desktop-width) {
+    .slider-wrapper {
+      background-size: 350px;
+    }
+
+    .slider-wrapper.container {
+      padding: 0;
+      min-width: 100%;
+    }
+
+    .slider {
+      padding-left: 175px;
+      padding-bottom: 90px;
+      margin-bottom: 65px;
+    }
   }
 
-  .slider-wrapper.container {
-    min-width: 100%;
+  @media ($tablet-width) and (min-resolution: 144dpi),
+  ($tablet-width) and (min-resolution: 1.5dppx) {
+    .slider-wrapper {
+      background-image: url('../img/review@2x.jpg');
+    }
   }
-}
-
-@media ($desktop-width) {
-  .slider-wrapper {
-    background-size: 350px;
-  }
-
-  .slider-wrapper.container {
-    padding: 0;
-    min-width: 100%;
-  }
-
-  .slider {
-    padding-left: 175px;
-  }
-}
-
-@media ($tablet-width) and (min-resolution: 144dpi),
-($tablet-width) and (min-resolution: 1.5dppx) {
-  .slider-wrapper {
-    background-image: url('../img/review@2x.jpg');
-  }
-}

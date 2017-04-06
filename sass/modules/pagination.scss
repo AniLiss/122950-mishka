@@ -23,22 +23,10 @@
 
   &--toys {
     &:hover {
-      //height: 125px;
-
       p {
         margin-bottom: 10px;
       }
     }
-
-    //&::after {
-    //  content: '';
-    //  min-width: 60px;
-    //  height: 60px;
-    //  background-image: url('../img/icon-toy.svg');
-    //  background-repeat: no-repeat;
-    //  display: block;
-    //  background-position: center;
-    //}
   }
 
   &--interior {
@@ -87,6 +75,10 @@
     font-size: 19px;
     font-weight: bold;
   }
+
+  svg {
+    fill: #3bb09d;
+  }
 }
 
 .pagination.container {
@@ -105,11 +97,16 @@
     padding: 0 50px;
     height: 125px;
     position: relative;
-    margin-top: -120px;
+    margin-top: -135px;
   }
 
   .pagination__item {
     min-width: 50%;
+    height: 120px;
+
+    p {
+      line-height: 30px;
+    }
   }
 }
 

@@ -10,7 +10,7 @@
 
 .vcard {
   color: $dark-grey-color;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   line-height: 30px;
 }
 
@@ -19,7 +19,7 @@
   //padding-bottom: 44px;
   position: relative;
   color: $base-font-color;
-  padding-top: 35px;
+  padding-top: 40px;
 }
 
 .vcard__term {
@@ -29,7 +29,7 @@
 
 .vcard__definition {
   margin-left: 35px;
-  padding-top: 40px;
+  padding-top: 25px;
   vertical-align: text-top;
 
   &--email {
@@ -58,7 +58,7 @@
 
 .contacts__button {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 
   .btn {
     margin: 0 auto;
@@ -66,13 +66,20 @@
 }
 
 @media ($tablet-width) {
+  .vcard {
+    padding-bottom: 50px;
+  }
+
   .contacts.container {
-    padding: 50px;
+    //padding: 50px;
+    padding: 0;
+    padding-bottom: 55px;
   }
 
   .vcard__title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 80px;
 
     &::after {
       background-image: url('../img/icon-flag.svg');
@@ -82,7 +89,7 @@
       content: '';
       background-repeat: no-repeat;
       position: absolute;
-      top: 50%;
+      top: 100%;
       transform: translateY(-80%);
       right: 0;
     }
@@ -91,11 +98,16 @@
   .vcard__table {
     tbody {
       display: flex;
+      font-size: 17px;
     }
 
     tr {
-      flex-basis: 300px;
+      //flex-basis: 100%;
     }
+  }
+
+  .vcard__definition {
+    padding-top: 45px;
   }
 
   .contacts__button {
@@ -104,6 +116,11 @@
     .btn {
       width: 230px;
     }
+  }
+
+  .vcard__term__address {
+    padding-left: 50px;
+    padding-right: 25px;
   }
 }
 
@@ -117,7 +134,7 @@
     line-height: 57px;
 
     &::after {
-      left: -135px;
+      left: -110px;
     }
   }
 
@@ -128,10 +145,18 @@
   }
 
   .vcard {
-    padding: 70px 0 0 175px;
+    padding: 40px 0 0 175px;
     margin: 0;
     flex-basis: 50%;
     min-width: 45%;
+  }
+
+  .vcard__term__address {
+    padding-left: 0;
+  }
+
+  .vcard__definition {
+    padding-top: 35px;
   }
 
   .contacts {
@@ -140,6 +165,7 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 45px;
   }
 
   .contacts__button {
@@ -147,7 +173,7 @@
     padding-left: 225px;
     padding-bottom: 0;
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     left: 0;
 
     .btn {

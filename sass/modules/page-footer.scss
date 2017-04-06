@@ -3,17 +3,19 @@
   background-color: #f1f1f1;
 }
 
-.social-links__item {
-  padding-right: 30px;
+.social-links {
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright {
-  font-size: 19px;
+  font-size: 20px;
   border-top: 1px solid #ececec;
   font-family: $base-font-bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 
 .html-academy-logo {
@@ -44,7 +46,7 @@
 
 .footer-wrapper {
   & > * {
-    padding: 25px 0;
+    padding: 23px 60px;
   }
 
   a {
@@ -65,11 +67,22 @@
 @media ($tablet-width) {
   .map {
     background-image: url('../img/map-tablet@1x.jpg');
+    margin-bottom: 52px;
   }
 
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
+
+    & > * {
+      padding: 50px 0;
+    }
+  }
+
+  .social-links {
+    flex-basis: 240px;
+    padding-left: 97px;
+    align-items: center;
   }
 }
 

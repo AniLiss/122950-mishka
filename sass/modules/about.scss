@@ -3,7 +3,7 @@
   //padding-top: 0;
   padding-bottom: 25px;
   position: relative;
-  margin-top: 35px;
+  margin-top: 30px;
   //&::before {
   //  content: '';
   //  display: block;
@@ -25,9 +25,12 @@
 }
 
 .about__item {
-  font-size: 17px;
+  font-size: 18px;
   color: $dark-grey-color;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+  font-family: $base-font-bold;
+  font-weight: bold;
+  width: 200px;
 
   &:last-of-type {
     padding: 0;
@@ -40,41 +43,50 @@
     display: block;
     margin-bottom: 10px;
     background-repeat: no-repeat;
-
   }
 
   &:first-of-type {
+    width: 180px;
+
     &::before {
       background-image: url('../img/icon-feature-1.svg');
-
     }
   }
 
   &:nth-of-type(2) {
     &::before {
-      background-image: url('../img/icon-feature-2.svg');
+      background-image: url('../img/icon-feature-3.svg');
+      margin-bottom: 12px;
     }
   }
 
   &:nth-of-type(3) {
-    &::before {
-      background-image: url('../img/icon-feature-3.svg');
-    }
-  }
+    width: 220px;
 
-  &:nth-of-type(4) {
-    &::before {
-      background-image: url('../img/icon-feature-4.svg');
-    }
-  }
-
-  &:nth-of-type(5) {
     &::before {
       background-image: url('../img/icon-feature-5.svg');
     }
   }
 
+  &:nth-of-type(4) {
+    width: 260px;
+
+    &::before {
+      background-image: url('../img/icon-feature-2.svg');
+    }
+  }
+
+  &:nth-of-type(5) {
+    width: 260px;
+
+    &::before {
+      background-image: url('../img/icon-feature-4.svg');
+    }
+  }
+
   &:nth-of-type(6) {
+    width: 250px;
+
     &::before {
       background-image: url('../img/icon-feature-6.svg');
     }
@@ -82,6 +94,10 @@
 }
 
 @media ($tablet-width) {
+  .about {
+    padding-top: 60px;
+  }
+
   .about__list {
     display: flex;
     flex-wrap: wrap;
@@ -89,12 +105,45 @@
   }
 
   .about__item {
-    flex-basis: 250px;
+    //flex-basis: 250px;
+    flex-basis: 50%;
+    font-size: 22px;
+    padding-bottom: 53px;
+
+    &:first-of-type {
+      order: 1;
+    }
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      order: 5;
+    }
+
+    &:nth-of-type(4) {
+      order: 2;
+    }
+
+    &:nth-of-type(5) {
+      order: 3;
+    }
+
+    &:nth-of-type(6) {
+      order: 6;
+    }
+
+    &:nth-of-type(n+4) {
+      padding-left: 16px;
+    }
   }
 }
 
 @media ($desktop-width) {
   .about {
     padding-left: 175px;
+    padding-top: 85px;
+    padding-bottom: 30px;
   }
 }

@@ -5,5 +5,12 @@
 @media ($tablet-width) {
   .free-delivery {
     display: block;
+    padding-top: 20px;
+  }
+}
+
+@media ($desktop-width) {
+  .free-delivery {
+    padding-top: 0;
   }
 }

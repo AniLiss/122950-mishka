@@ -1,7 +1,6 @@
 //.page-content {
 //  margin-top: 5px;
 //}
-
 .page-content__title {
   font-size: 27px;
   line-height: 30px;
@@ -16,11 +15,24 @@
     background-size: cover;
     background-position-x: 50%;
   }
+
+  &--catalog {
+    padding: 70px 30px 75px;
+  }
+
+  &--form {
+    padding: 70px 30px;
+  }
 }
 
 .page-content__description {
   font-size: 13px;
   padding: 30px 0;
+
+  &--form {
+    line-height: 23px;
+    padding: 30px 0;
+  }
 }
 
 @media ($tablet-width) {
@@ -29,41 +41,85 @@
   }
 
   .page-content__title {
-    &--index {
-      background-image: url('../img/hero-desktop@1x.jpg');
-      height: 640px;
-      position: relative;
+    font-size: 43px;
 
-      &::after {
-        content: '';
-        display: block;
-        background-image: url(../img/bg-zigzag-fill.svg);
-        width: 100%;
-        height: 34px;
-        bottom: 0;
-        z-index: 1;
-        left: 0;
-        position: absolute;
-      }
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      width: 100%;
+      height: 34px;
+      bottom: 0;
+      z-index: 1;
+      left: 0;
+      position: absolute;
+    }
+
+    &--index {
+      background-image: url(../img/hero-desktop@1x.jpg);
+      height: 765px;
+      //position: relative;
+      line-height: 48px;
+      padding: 155px 80px 0;
+
+      //&::after {
+      //  content: '';
+      //  display: block;
+      //  background-image: url(../img/bg-zigzag-fill.svg);
+      //  width: 100%;
+      //  height: 34px;
+      //  bottom: 0;
+      //  z-index: 1;
+      //  left: 0;
+      //  position: absolute;
+      //}
+    }
+
+    &--catalog {
+      padding: 107px 30px 115px;
+      margin-bottom: 55px;
+    }
+
+    &--form {
+      padding-top: 105px;
+      padding-bottom: 115px;
+      line-height: 30px;
     }
   }
 
-  .pagination {
-
+  .page-content__description {
+    &--form {
+      font-size: 17px;
+      padding-top: 50px;
+      line-height: 30px;
+      padding-bottom: 10px;
+    }
   }
 }
 
 @media ($desktop-width) {
   .page-content__description {
     &--form {
-      padding-left: 60px;
+      padding-left: 175px;
+      padding-right: 160px;
+      padding-top: 105px;
     }
   }
 
   .page-content__title {
+    font-size: 53px;
+    line-height: 55px;
+    padding: 160px;
+
     &--index {
       background-image: url('../img/hero-desktop@1x.jpg');
-      height: 855px;
+      height: 765px;
+    }
+
+    &--catalog {
+      padding: 100px 30px 120px;
     }
   }
 }

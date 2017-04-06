@@ -4,14 +4,28 @@
 }
 
 .feedback__author {
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .feedback__name {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .feedback__nickname {
   font-size: 17px;
   color: $dark-grey-color;
+  line-height: 35px;
+}
+
+@media ($tablet-width) {
+  .feedback__author {
+    padding-top: 60px;
+  }
+}
+
+@media ($desktop-width) {
+  .feedback__author {
+    padding-top: 40px;
+  }
 }

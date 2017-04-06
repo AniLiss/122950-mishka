@@ -6,10 +6,17 @@
   padding: 0;
 }
 
+@media ($tablet-width) {
+  .container {
+    &--slider {
+      padding: 0;
+    }
+  }
+}
+
 @media ($desktop-width) {
   .container--slider {
     padding: 0 50px;
     max-width: 1150px;
-
   }
 }

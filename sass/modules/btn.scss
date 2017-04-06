@@ -1,4 +1,6 @@
 .btn {
+  font-weight: bold;
+
   &:hover {
     background-color: $dark-grey-color;
     color: #fff;
@@ -37,5 +39,6 @@
 
   a {
     color: $dark-grey-color;
+    font-weight: bold;
   }
 }
