@@ -5,6 +5,7 @@ let modal = page.querySelectorAll('.modal');
 let catalogList = page.querySelectorAll('.catalog-list');
 let modalWrapper = page.querySelectorAll('.modal-wrapper');
 let orderBtn = page.querySelectorAll('#order');
+let basketBtn = page.querySelectorAll('.basket-btn');
 
 function openMenu() {
   pageMenu[0].classList.toggle('invisible');
@@ -12,7 +13,8 @@ function openMenu() {
 };
 
 function openModal(e) {
-  if (e.target.parentNode.classList.contains('basket-btn') || e.target.classList.contains('btn')) {
+  e.preventDefault();
+  if (e.target.parentNode.classList.contains('basket-btn') || e.target.classList.contains('basket-btn')) {
     modal[0].classList.toggle('invisible');
     modalWrapper[0].classList.toggle('invisible');
   }
@@ -22,6 +24,10 @@ toggleBnt[0].addEventListener('click', openMenu);
 
 if(catalogList[0]) {
   catalogList[0].addEventListener('click', openModal);
+}
+
+if(basketBtn[0]) {
+  basketBtn[0].addEventListener('click', openModal);
 }
 
 if(orderBtn[0]) {

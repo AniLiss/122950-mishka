@@ -70,10 +70,12 @@
   }
 
   p {
-    font-family: $base-font-bold;
-    width: 40px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    width: 240px;
     font-size: 19px;
     font-weight: bold;
+    max-height: 65px;
+    overflow: hidden;
   }
 
   svg {

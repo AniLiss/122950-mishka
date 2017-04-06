@@ -21,10 +21,10 @@
   <nav class="page-menu">
     <ul class="page-menu__list container">
       <li class="page-menu__item page-menu__item--catalog">
-        <a href="#"><span>Каталог товаров</span></a>
+        <a href="#">Каталог товаров</a>
       </li>
       <li class="page-menu__item page-menu__item--order">
-        <a href="#"><span>Вязание на заказ</span></a>
+        <a href="#">Вязание на заказ</a>
       </li>
       <li class="page-menu__logo">
         <a class="logo" href="#">
@@ -33,22 +33,18 @@
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--search">
         <a href="#">
-          <div>
             <svg width="18" height="18">
               <use xlink:href="#icon-search"></use>
             </svg>
             <span>Поиск по сайту</span>
-          </div>
         </a>
       </li>
       <li class="page-menu__item page-menu__item--decorated page-menu__item--basket">
-        <a href="#">
-          <div>
+        <a href="#" class="basket-btn">
             <svg width="21" height="18">
               <use xlink:href="#icon-cart"></use>
             </svg>
-            <span>Корзина: пока пустa</span>
-          </div>
+            Корзина: пока пустa
         </a>
       </li>
     </ul>
@@ -56,8 +52,12 @@
 
   <nav class="page-submenu container">
     <ul class="page-submenu__list">
-      <li class="page-submenu__item">Новые поступления</li>
-      <li class="page-submenu__item">Распродажа</li>
+      <li class="page-submenu__item">
+        <a href="#">Новые поступления</a>
+      </li>
+      <li class="page-submenu__item">
+        <a href="#">Распродажа</a>
+      </li>
     </ul>
 
     <p class="free-delivery">
@@ -133,22 +133,22 @@
       <h2 class="section-title">Коротко о нас</h2>
 
       <ul class="about__list">
-        <li class="about__item">
+        <li class="about__item about__item--flower">
           Экологически чистые материалы
         </li>
-        <li class="about__item">
+        <li class="about__item about__item--rub">
           Скандинавский стиль по российской цене
         </li>
-        <li class="about__item">
+        <li class="about__item about__item--heart">
           Увеличивает лайки на фотографиях
         </li>
-        <li class="about__item">
+        <li class="about__item about__item--clew">
           Связано вручную с любовью и умилением
         </li>
-        <li class="about__item">
+        <li class="about__item about__item--rocket">
           Поддержка отечественного производителя
         </li>
-        <li class="about__item">
+        <li class="about__item about__item--gift">
           Поставляется в подарочной упаковке
         </li>
       </ul>
@@ -263,22 +263,22 @@
 <div class="modal-wrapper invisible"></div>
 <form class="modal invisible" action="https://echo.htmlacademy.ru/" method="post">
   <div class="modal-conainer">
-    <h1 class="modal-title">Добавить в корзину</h1>
+    <h2 class="modal-title">Добавить в корзину</h2>
     <p class="modal-subtitle">Выберите размер:</p>
     <ul class="modal-list">
       <li class="modal-list__option">
-        <input id="s" type="radio" value="size" name="size">
+        <input id="s" type="radio" name="size">
         <label for="s">S</label>
       </li>
       <li class="modal-list__option">
-        <input id="m" type="radio" value="size" name="size">
+        <input id="m" type="radio" name="size">
         <label for="m">M</label></li>
       <li class="modal-list__option">
-        <input id="l" type="radio" value="size" name="size">
+        <input id="l" type="radio" name="size">
         <label for="l">L</label>
       </li>
     </ul>
-    <button class="btn btn--modal">Добавить</button>
+    <button type="button" class="btn btn--modal">Добавить</button>
   </div>
 </form>
 
