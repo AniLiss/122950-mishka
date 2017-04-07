@@ -110,6 +110,10 @@
     .slider .section-title {
       padding-bottom: 40px;
     }
+
+    .slider__controls {
+      bottom: 60px;
+    }
   }
 
   @media ($tablet-width) and (min-resolution: 144dpi),

@@ -70,8 +70,8 @@
   }
 
   p {
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    width: 150px;
+    font-family: $base-font-bold;
+    width: 130px;
     font-size: 19px;
     //font-weight: bold;
     max-height: 65px;
