@@ -9,7 +9,8 @@
 
 .feedback__name {
   font-size: 18px;
-  font-weight: bold;
+  font-family: $base-font-bold;
+  //font-weight: bold;
 }
 
 .feedback__nickname {
@@ -22,9 +23,16 @@
   .feedback__author {
     padding-top: 60px;
   }
+
+  .feedback__content {
+    font-size: 17px;
+  }
 }
 
 @media ($desktop-width) {
+  .feedback__content {
+    padding: 0px 105px 0 0;
+  }
   .feedback__author {
     padding-top: 40px;
   }

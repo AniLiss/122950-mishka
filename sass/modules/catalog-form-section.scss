@@ -31,8 +31,10 @@
 
   span {
     min-width: 70px;
-    font-weight: bold;
+    //font-weight: bold;
     //padding-top: 10px;
+    font-family: $base-font-bold;
+
   }
 
   &::after {
@@ -89,7 +91,9 @@ input[type='email'] {
     font-size: 17px;
     font-family: $base-font-bold;
     line-height: 18px;
-    font-weight: bold;
+    //font-weight: bold;
+    font-family: $base-font-bold;
+
   }
 
   span {

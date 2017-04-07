@@ -44,24 +44,24 @@
     }
   }
 
-  &--search {
-    a {
-      &::before {
-        //background-image: url('../img/icon-search.svg');
-      }
-    }
-  }
-
-  &--basket {
-    a {
-      &::before {
-        //background-image: url('../img/icon-cart.svg');
-      }
-    }
-  }
+  //&--search {
+  //  a {
+  //    &::before {
+  //      //background-image: url('../img/icon-search.svg');
+  //    }
+  //  }
+  //}
+  //
+  //&--basket {
+  //  a {
+  //    &::before {
+  //      //background-image: url('../img/icon-cart.svg');
+  //    }
+  //  }
+  //}
 
   a {
-    padding: 28px 75px;
+    padding: 28px 0 28px 75px;
     display: block;
   }
 }
@@ -122,7 +122,8 @@
       position: absolute;
       bottom: -75px;
       z-index: 1;
-      font-weight: bold;
+      font-family: $base-font-bold;
+      //font-weight: bold;
     }
 
     &--order {
@@ -131,9 +132,10 @@
 
     a {
       padding: 31px;
-      font-family: "Open Sans Bold", "Arial", sans-serif;
-      font-weight: bold;
-      font-size: 18px;
+      font-family: $base-font-bold;
+      //font-family: $base-font-bold;
+      //font-weight: bold;
+      font-size: 15px;
       letter-spacing: 0.3px;
 
     }
@@ -188,6 +190,11 @@
 
 @media ($desktop-width) {
   .page-menu__item {
+
+    a {
+      font-size: 17px;
+    }
+
     &--catalog,
     &--order {
       position: relative;

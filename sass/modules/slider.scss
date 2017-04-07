@@ -1,5 +1,5 @@
 .slider {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 45px;
 
   .btn {
@@ -9,7 +9,7 @@
 }
 
 .slider__controls {
-  padding: 30px 0 35px;
+  padding: 30px 0 40px;
   display: flex;
 
 
@@ -44,7 +44,7 @@
 
 .slider {
   .section-title {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 }
 
@@ -67,7 +67,7 @@
       .btn {
         max-width: 176px;
         position: absolute;
-        top: 33px;
+        top: 50px;
         transform: translateY(80%);
         right: 0;
       }
@@ -103,7 +103,12 @@
     .slider {
       padding-left: 175px;
       padding-bottom: 90px;
+      padding-top: 65px;
       margin-bottom: 65px;
+    }
+
+    .slider .section-title {
+      padding-bottom: 40px;
     }
   }
 

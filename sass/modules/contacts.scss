@@ -58,7 +58,7 @@
 
 .contacts__button {
   padding-top: 40px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 
   .btn {
     margin: 0 auto;
@@ -73,13 +73,14 @@
   .contacts.container {
     //padding: 50px;
     padding: 0;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
   }
 
   .vcard__title {
     font-size: 43px;
     line-height: 50px;
     padding-top: 80px;
+    font-family: $base-font-bold;
 
     &::after {
       background-image: url('../img/icon-flag.svg');
@@ -173,7 +174,7 @@
     padding-left: 225px;
     padding-bottom: 0;
     position: absolute;
-    bottom: 100px;
+    bottom: 107px;
     left: 0;
 
     .btn {

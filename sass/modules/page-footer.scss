@@ -15,7 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+  font-family: $base-font-bold;
+  //font-weight: bold;
 }
 
 .html-academy-logo {
@@ -67,7 +68,7 @@
 @media ($tablet-width) {
   .map {
     background-image: url('../img/map-tablet@1x.jpg');
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 
   .footer-wrapper {
@@ -90,6 +91,7 @@
   .map {
     flex-basis: 50%;
     background-image: url('../img/map-desktop@1x.jpg');
+    margin-top: 50px;
   }
 
   .page-footer {
@@ -100,27 +102,21 @@
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .page-content__title {
-    &--index {
-      background-image: url('../img/map-mobile@2x.jpg');
-    }
+  .map {
+    background-image: url('../img/map-mobile@2x.jpg');
   }
 }
 
 @media ($tablet-width) and (min-resolution: 144dpi),
 ($tablet-width) and (min-resolution: 1.5dppx) {
-  .page-content__title {
-    &--index {
-      background-image: url('../img/map-tablet@2x.jpg');
-    }
+  .map {
+    background-image: url('../img/map-tablet@2x.jpg');
   }
 }
 
 @media ($desktop-width) and (min-resolution: 144dpi),
 ($desktop-width) and (min-resolution: 1.5dppx) {
-  .page-content__title {
-    &--index {
-      background-image: url('../img/map-desktop@2x.jpg');
-    }
+  .map {
+    background-image: url('../img/map-desktop@2x.jpg');
   }
 }

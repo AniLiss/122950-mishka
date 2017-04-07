@@ -1,6 +1,6 @@
 .btn {
-  font-weight: bold;
-
+  //font-weight: bold;
+  font-family: $base-font-bold;
   &:hover {
     background-color: $dark-grey-color;
     color: #fff;
@@ -30,7 +30,7 @@
   text-transform: uppercase;
   color: $dark-grey-color;
   text-align: center;
-  padding: 15px 25px;
+  padding: 10px 25px;
   font-family: $base-font-bold;
   background-color: transparent;
   border: 2px solid $dark-grey-color;
@@ -39,6 +39,7 @@
 
   a {
     color: $dark-grey-color;
-    font-weight: bold;
+    //font-weight: bold;
+    font-family: $base-font-bold;
   }
 }

@@ -2,19 +2,20 @@
   padding-top: 40px;
   padding-bottom: 25px;
   position: relative;
-  margin-top: 30px;
+  //margin-top: 30px;
 }
 
 .about__item {
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 20px;
   color: $dark-grey-color;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   font-family: $base-font-bold;
-  font-weight: bold;
+  //font-weight: bold;
   width: 200px;
 
   &:last-of-type {
-    padding: 0;
+    padding-bottom: 0;
   }
 
   &::before {
@@ -22,7 +23,7 @@
     width: 55px;
     height: 40px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-repeat: no-repeat;
   }
 
@@ -76,7 +77,8 @@
 
 @media ($tablet-width) {
   .about {
-    padding-top: 60px;
+    padding-top: 65px;
+    padding-bottom: 30px;
   }
 
   .about__list {
@@ -88,19 +90,23 @@
   .about__item {
     //flex-basis: 250px;
     flex-basis: 50%;
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 53px;
+    line-height: 22px;
 
     &--flower {
       order: 1;
+      padding: 0 85px 0 0;
     }
 
     &--rub {
       order: 3;
+      padding: 0 60px 0 0;
     }
 
     &--heart {
       order: 5;
+      padding-right: 95px;
     }
 
     &--clew {
@@ -113,6 +119,7 @@
 
     &--gift {
       order: 6;
+      padding-right: 60px;
     }
 
     &:nth-of-type(n+4) {
@@ -124,7 +131,13 @@
 @media ($desktop-width) {
   .about {
     padding-left: 175px;
-    padding-top: 85px;
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+
+  .about__item {
+    &:nth-of-type(n+4) {
+      padding-left: 22px;
+    }
   }
 }
