@@ -257,6 +257,8 @@
 
       .catalog-item__preview {
         background-image: url(../img/triple-set-tablet@1x.jpg);
+        background-size: cover;
+        background-position: center;
         max-width: 50%;
         top: 0;
         right: 0;
@@ -449,6 +451,12 @@
     &--popular {
       .catalog-item__preview {
         background-image: url(../img/triple-set-mobile@2x.jpg);
+        //background-size: 265px 315px;
+        background-size: cover;
+      }
+
+      img {
+        visibility: hidden;
       }
     }
   }
@@ -460,6 +468,10 @@
     &--popular {
       .catalog-item__preview {
         background-image: url(../img/triple-set-tablet@2x.jpg);
+
+        img {
+          visibility: hidden;
+        }
       }
     }
   }
@@ -471,6 +483,10 @@
     &--popular {
       .catalog-item__preview {
         background-image: url(../img/triple-set-desktop@2x.jpg);
+      }
+
+      img {
+        visibility: hidden;
       }
     }
   }

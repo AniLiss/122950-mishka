@@ -26,13 +26,15 @@ gulp.task("style", function () {
         ]
       }),
       mqpacker({
-        sort: true
+        sort: false
       })
     ]))
+    .pipe(gulp.dest("css"))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(server.stream())
+    .pipe(gulp.dest("css"))
     .pipe(gulp.dest("build/css"));
 });
 
