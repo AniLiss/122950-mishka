@@ -7,6 +7,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  max-width: 260px;
+  margin: auto;
 }
 
 .copyright {
@@ -21,6 +24,7 @@
 
 .html-academy-logo {
   padding-left: 30px;
+  padding-top: 5px;
 }
 
 .map {
@@ -47,7 +51,7 @@
 
 .footer-wrapper {
   & > * {
-    padding: 23px 60px;
+    padding: 20px 60px;
   }
 
   a {

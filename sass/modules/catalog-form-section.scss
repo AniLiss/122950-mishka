@@ -29,14 +29,6 @@
   align-items: center;
   padding-bottom: 20px;
 
-  span {
-    min-width: 70px;
-    //font-weight: bold;
-    //padding-top: 10px;
-    font-family: $base-font-bold;
-
-  }
-
   &::after {
     content: '';
     width: 100%;
@@ -218,6 +210,7 @@ input[type='email'] {
         padding-bottom: 20px;
       }
     }
+
     &--color,
     &--contacts {
       background-color: #f1f1f1;
@@ -350,35 +343,62 @@ input[type='email'] {
 }
 
 @media ($desktop-width) {
+  .fieldset-wrap {
+    justify-content: flex-start;
+  }
+
+  .catalog-form-section__title {
+    flex-basis: 110px;
+  }
+
   .catalog-form-section {
     input[type='tel'],
     input[type='email'] {
       background-position: 99% 0;
     }
+
+    &--color {
+      padding-bottom: 10px;
+
+      .container {
+          padding-bottom: 10px;
+      }
+    }
   }
 
   .catalog-form-section__option-list {
+
+    .catalog-form-section__option {
+    padding-bottom: 30px;
+
+    &--contacts {
+
+
+      &:last-of-type {
+        padding-bottom: 25px;
+      }
+    }
+  }
     &--color {
       .catalog-form-section__option {
         flex-basis: 30%;
       }
     }
 
-    .catalog-form-section__option {
-      padding-bottom: 27px;
-
-      &--contacts {
-        &:last-of-type {
-          padding-bottom: 25px;
-        }
+    &--initials {
+      .catalog-form-section__option {
+        padding-bottom: 20px;
       }
     }
+
+
   }
 
   .catalog-form-section__option {
     input[placeholder],
     textarea {
       font-size: 18px;
+      //padding: 10px 15px;
     }
 
     label {

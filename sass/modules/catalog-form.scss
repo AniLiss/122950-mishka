@@ -18,8 +18,10 @@
 
 @media ($desktop-width) {
   .catalog-form {
+    padding-bottom: 45px;
+    
     .container {
-      padding-left: 225px;
+      padding-left: 115px;
 
       &--form-footer {
         padding-top: 0;
@@ -30,15 +32,28 @@
   }
 
   .catalog-form-section__title {
-    position: absolute;
-    left: 110px;
+    //position: absolute;
+    //left: 110px;
+  }
+
+  .catalog-form-section__option {
+    width: 700px;
+
+    &--contacts {
+      width: 700px;
+    }
   }
 
   .catalog-form-section__option-list {
-    width: 700px;
+    width: 750px;
+
+    &--initials {
+      width: 700px;
+    }
   }
 
   .form-footer {
     width: 700px;
+    //margin-left: auto;
   }
 }
