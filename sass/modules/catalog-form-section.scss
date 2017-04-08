@@ -276,6 +276,8 @@ input[type='email'] {
     }
 
     &--initials {
+      padding: 12px 0;
+      
       p {
         display: flex;
         align-items: center;
@@ -390,8 +392,6 @@ input[type='email'] {
         padding-bottom: 20px;
       }
     }
-
-
   }
 
   .catalog-form-section__option {
