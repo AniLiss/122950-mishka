@@ -62,9 +62,9 @@
         border-bottom: 1px solid #ececec;
         padding: 10px 0;
 
-        &:first-child {
-          padding-right: 22px;
-        }
+        //&:first-child {
+        //  padding-right: 22px;
+        //}
       }
     }
 
@@ -227,7 +227,7 @@
       .catalog-item__title {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 55px;
+        padding-bottom: 40px;
         //flex-basis: 100%;
 
       }
@@ -370,7 +370,7 @@
         position: absolute;
         flex-basis: 50%;
         left: 175px;
-        margin-top: 70px;
+        margin-top: 65px;
       }
 
       .catalog-item__subtitle {
@@ -393,7 +393,7 @@
       }
 
       .catalog-item__description {
-        padding: 35px 0 45px;
+        padding: 30px 0 45px;
       }
     }
 

@@ -29,11 +29,11 @@ gulp.task("style", function () {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(server.stream())
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("css"));
 });
 
 gulp.task("images", function () {

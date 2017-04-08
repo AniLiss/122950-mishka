@@ -79,7 +79,7 @@
   .vcard__title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 80px;
+    padding-top: 75px;
     font-family: $base-font-bold;
 
     &::after {
@@ -130,6 +130,10 @@
     padding: 50px;
   }
 
+  .vcard__table {
+    padding-top: 20px;
+  }
+
   .vcard__title {
     font-size: 53px;
     line-height: 57px;
@@ -157,7 +161,7 @@
   }
 
   .vcard__definition {
-    padding-top: 35px;
+    padding-top: 27px;
   }
 
   .contacts {
