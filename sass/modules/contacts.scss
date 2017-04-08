@@ -19,7 +19,7 @@
   //padding-bottom: 44px;
   position: relative;
   color: $base-font-color;
-  padding-top: 40px;
+  padding-top: 43px;
 }
 
 .vcard__term {
@@ -30,6 +30,7 @@
 .vcard__definition {
   margin-left: 35px;
   padding-top: 25px;
+  padding-left: 5px;
   vertical-align: text-top;
 
   &--email {

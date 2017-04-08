@@ -21,7 +21,6 @@
   color: $dark-grey-color;
   padding-bottom: 29px;
   font-family: $base-font-bold;
-  //font-weight: bold;
   width: 220px;
 
   &::before {
@@ -39,6 +38,7 @@
     &::before {
       background-image: url('../img/icon-feature-1.svg');
       background-size: 35px 40px;
+      background-position: 40% 100%;
     }
   }
 
@@ -56,6 +56,7 @@
     &::before {
       background-image: url('../img/icon-feature-5.svg');
       background-size: 36px 28px;
+      background-position: 34% 60%;
     }
   }
 
@@ -69,11 +70,12 @@
   }
 
   &--rocket {
-    width: 300px;
+    width: 260px;
 
     &::before {
       background-image: url('../img/icon-feature-4.svg');
       background-size: 55px 23px;
+      background-position: 0 20%;
     }
   }
 
@@ -106,17 +108,12 @@
   }
 
   .about__item {
-    //flex-basis: 250px;
     font-size: 20px;
     padding-bottom: 53px;
     line-height: 22px;
 
     &--flower {
       width: 220px;
-
-      &::before {
-        background-position: 40% 100%;
-      }
     }
 
     &--rub {
@@ -125,10 +122,13 @@
 
     &--heart {
       width: 230px;
-
       &::before {
         background-position: 40% 100%;
       }
+    }
+
+    &--rocket {
+      width: 300px;
     }
   }
 }
@@ -143,162 +143,4 @@
   .about__list {
     flex-basis: 40%;
   }
-
-  //.about__item {
-  //  &:nth-of-type(n+4) {
-  //    padding-left: 22px;
-  //  }
-  //}
 }
-
-//--------------------
-//.about {
-//  padding-top: 40px;
-//  padding-bottom: 25px;
-//  position: relative;
-//  //margin-top: 30px;
-//}
-//
-//.about__item {
-//  font-size: 17px;
-//  line-height: 20px;
-//  color: $dark-grey-color;
-//  padding-bottom: 29px;
-//  font-family: $base-font-bold;
-//  //font-weight: bold;
-//  width: 200px;
-//
-//  &:last-of-type {
-//    padding-bottom: 0;
-//  }
-//
-//  &::before {
-//    content: '';
-//    width: 55px;
-//    height: 40px;
-//    display: block;
-//    margin-bottom: 15px;
-//    background-repeat: no-repeat;
-//  }
-//
-//  &--flower {
-//    width: 180px;
-//
-//
-//    &::before {
-//      background-image: url('../img/icon-feature-1.svg');
-//      background-size: 35px 40px;
-//    }
-//  }
-//
-//  &--rub {
-//    &::before {
-//      background-image: url('../img/icon-feature-3.svg');
-//      margin-bottom: 12px;
-//      background-size: 47px 28px;
-//    }
-//  }
-//
-//  &--heart {
-//    width: 195px;
-//
-//    &::before {
-//      background-image: url('../img/icon-feature-5.svg');
-//      background-size: 36px 28px;
-//    }
-//  }
-//
-//  &--clew {
-//    width: 250px;
-//
-//    &::before {
-//      background-image: url('../img/icon-feature-2.svg');
-//      background-size: 35px 35px;
-//    }
-//  }
-//
-//  &--rocket {
-//    width: 260px;
-//
-//    &::before {
-//      background-image: url('../img/icon-feature-4.svg');
-//      background-size: 55px 23px;
-//    }
-//  }
-//
-//  &--gift {
-//    width: 250px;
-//
-//    &::before {
-//      background-image: url('../img/icon-feature-6.svg');
-//      background-size: 34px 33px;
-//    }
-//  }
-//}
-//
-//@media ($tablet-width) {
-//  .about {
-//    padding-top: 65px;
-//    padding-bottom: 30px;
-//  }
-//
-//  .about__list {
-//    display: flex;
-//    flex-wrap: wrap;
-//    max-width: 630px
-//  }
-//
-//  .about__item {
-//    //flex-basis: 250px;
-//    flex-basis: 50%;
-//    font-size: 20px;
-//    padding-bottom: 53px;
-//    line-height: 22px;
-//
-//    &--flower {
-//      order: 1;
-//      padding: 0 85px 0 0;
-//    }
-//
-//    &--rub {
-//      order: 3;
-//      padding: 0 60px 0 0;
-//    }
-//
-//    &--heart {
-//      order: 5;
-//      padding-right: 95px;
-//    }
-//
-//    &--clew {
-//      order: 2;
-//    }
-//
-//    &--rocket {
-//      order: 3;
-//    }
-//
-//    &--gift {
-//      order: 6;
-//      padding-right: 60px;
-//    }
-//
-//    &:nth-of-type(n+4) {
-//      padding-left: 16px;
-//    }
-//  }
-//}
-//
-//@media ($desktop-width) {
-//  .about {
-//    padding-left: 175px;
-//    padding-top: 80px;
-//    padding-bottom: 35px;
-//  }
-//
-//  .about__item {
-//    &:nth-of-type(n+4) {
-//      padding-left: 22px;
-//    }
-//  }
-//}
