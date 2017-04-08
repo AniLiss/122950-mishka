@@ -147,12 +147,19 @@
   position: relative;
   overflow: hidden;
   min-height: 195px;
+  //top: 50%;
+  //teft: 50%;
+  //transform: translate(-50%, -50%);
 
   img {
     display: block;
     position: absolute;
     width: 100%;
     background-position: center;
+
+    top: 0;
+    left: 0;
+    //transform: translate(-50%, -50%);
   }
 }
 
