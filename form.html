@@ -14,7 +14,7 @@
         <img src="img/logo-mobile.svg" alt="logo" width="85" height="35">
       </a>
 
-      <button class="page-menu-toggle"></button>
+      <button type="button" class="page-menu-toggle"></button>
     </div>
   </div>
 
@@ -93,7 +93,7 @@
             </li>
             <li class="catalog-form-section__option">
               <input id="toy" type="radio" value="toy" name="type">
-              <label for="toy">Детская игрушка</label>
+              <label for="toy"><span>Детская игрушка</span></label>
             </li>
           </ul>
         </div>
@@ -224,7 +224,7 @@
     <div class="container container--form-footer">
       <div class="form-footer">
         <p class="catalog-form__prompt">*Поля обязательны для заполнения</p>
-        <button type="button" class="btn">Отправить заказ</button>
+        <button type="submit" class="btn">Отправить заказ</button>
       </div>
     </div>
   </form>
@@ -277,14 +277,14 @@
     <p class="modal-subtitle">Выберите размер:</p>
     <ul class="modal-list">
       <li class="modal-list__option">
-        <input id="s" type="radio" name="size">
+        <input id="s" type="radio" name="size" value="S">
         <label for="s">S</label>
       </li>
       <li class="modal-list__option">
-        <input id="m" type="radio" name="size">
+        <input id="m" type="radio" name="size" value="M">
         <label for="m">M</label></li>
       <li class="modal-list__option">
-        <input id="l" type="radio" name="size">
+        <input id="l" type="radio" name="size" value="L">
         <label for="l">L</label>
       </li>
     </ul>
